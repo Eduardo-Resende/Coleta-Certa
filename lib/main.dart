@@ -1,4 +1,4 @@
-import 'package:coleta_certa/ui/loading_screen.dart';
+import 'package:coleta_certa/ui/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +11,7 @@ class ColetaCertaApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoadingScreen()
+      home: MainScreen()
     );
   }
 }
