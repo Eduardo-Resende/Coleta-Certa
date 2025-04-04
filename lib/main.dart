@@ -1,4 +1,4 @@
-import 'package:coleta_certa/ui/main_screen.dart';
+import 'package:coleta_certa/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

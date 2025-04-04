@@ -1,8 +1,14 @@
+import 'package:coleta_certa/screens/config_screen.dart';
 import 'package:flutter/material.dart';
 
-class MainScreen extends StatelessWidget {
+class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
+  @override
+  State<MainScreen> createState() => _MainScreenState();
+}
+
+class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,10 +19,15 @@ class MainScreen extends StatelessWidget {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Icon(
-              Icons.restore_from_trash_rounded,
-              color: Colors.green,
-              size: 50,
+            IconButton(
+              padding: EdgeInsets.zero,
+              constraints: BoxConstraints(),
+              onPressed: () {},
+              icon: Icon(
+                Icons.restore_from_trash_rounded,
+                color: Colors.green,
+                size: 50,
+              ),
             ),
             Text(
               'Coleta Certa',
@@ -27,7 +38,12 @@ class MainScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Icon(Icons.account_circle, color: Colors.green, size: 50),
+            IconButton(
+              padding: EdgeInsets.zero,
+              constraints: BoxConstraints(),
+              onPressed: () => changeScreen(1),
+              icon: Icon(Icons.account_circle, color: Colors.green, size: 50),
+            ),
           ],
         ),
       ),
@@ -100,4 +116,15 @@ class MainScreen extends StatelessWidget {
       ),
     );
   }
+
+  changeScreen(int n){
+    switch (n) {
+      case 1:
+        Navigator.push(context, MaterialPageRoute(builder: (_) => ConfigScreen()));
+      break;
+      default:
+    }
+    
+  }
+
 }
