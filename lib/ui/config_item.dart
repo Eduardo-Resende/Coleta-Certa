@@ -24,7 +24,14 @@ class _ConfigState extends State<ConfigItem> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Icon(widget.icon, color: Colors.white, size: 70),
-            Text(widget.text, style: TextStyle(color: Colors.white,fontSize: 30, fontWeight: FontWeight.bold),),
+            Text(
+              widget.text,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             Switch(
               value: isOn,
               onChanged: (bool newValue) {

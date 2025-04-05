@@ -1,4 +1,5 @@
 import 'package:coleta_certa/screens/config_screen.dart';
+import 'package:coleta_certa/ui/navigate_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -11,6 +12,7 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
+    final NavigateScreen navigateScreen = NavigateScreen();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -41,7 +43,7 @@ class _MainScreenState extends State<MainScreen> {
             IconButton(
               padding: EdgeInsets.zero,
               constraints: BoxConstraints(),
-              onPressed: () => changeScreen(1),
+              onPressed: () => navigateScreen.changeScreen(context, ConfigScreen()),
               icon: Icon(Icons.account_circle, color: Colors.green, size: 50),
             ),
           ],
@@ -116,15 +118,4 @@ class _MainScreenState extends State<MainScreen> {
       ),
     );
   }
-
-  changeScreen(int n){
-    switch (n) {
-      case 1:
-        Navigator.push(context, MaterialPageRoute(builder: (_) => ConfigScreen()));
-      break;
-      default:
-    }
-    
-  }
-
 }
