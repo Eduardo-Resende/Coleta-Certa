@@ -1,5 +1,5 @@
 import 'package:coleta_certa/screens/config_screen.dart';
-import 'package:coleta_certa/screens/map_screen.dart';
+import 'package:coleta_certa/ui/floating_navigation_bar.dart';
 import 'package:coleta_certa/ui/navigate_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,45 +15,45 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     final NavigateScreen navigateScreen = NavigateScreen();
 
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        shadowColor: Colors.black,
-        elevation: 10,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            IconButton(
-              padding: EdgeInsets.zero,
-              constraints: BoxConstraints(),
-              onPressed: () => navigateScreen.changeScreen(context, MapScreen()),
-              icon: Icon(
-                Icons.restore_from_trash_rounded,
-                color: Colors.green,
-                size: 50,
-              ),
+    return Stack(
+      children: [
+        Scaffold(
+          appBar: AppBar(
+            automaticallyImplyLeading: false,
+            backgroundColor: const Color.fromARGB(255, 36, 95, 37),
+            shadowColor: Colors.black,
+            elevation: 10,
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'ColetaCerta',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'nunito',
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                IconButton(
+                  padding: EdgeInsets.zero,
+                  constraints: BoxConstraints(),
+                  onPressed:
+                      () =>
+                          navigateScreen.changeScreen(context, ConfigScreen()),
+                  icon: Icon(
+                    Icons.live_help_outlined,
+                    color: Colors.white,
+                    size: 50,
+                  ),
+                ),
+              ],
             ),
-            Text(
-              'Coleta Certa',
-              style: TextStyle(
-                color: const Color.fromARGB(255, 36, 95, 37),
-                fontFamily: 'cursive',
-                fontSize: 50,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            IconButton(
-              padding: EdgeInsets.zero,
-              constraints: BoxConstraints(),
-              onPressed: () => navigateScreen.changeScreen(context, ConfigScreen()),
-              icon: Icon(Icons.account_circle, color: Colors.green, size: 50),
-            ),
-          ],
+          ),
+          body: Column()
         ),
-      ), 
-      body: Container(
-        color: Colors.grey,
-      ),
+        FloatingNavigationBar(),
+      ],
     );
   }
 }
