@@ -36,7 +36,7 @@ class FloatingNavigationBar extends StatelessWidget {
                           navigateScreen.changeScreen(context, MainScreen()),
                   icon: Icon(
                     Icons.house_outlined,
-                    color: const Color.fromARGB(255, 36, 95, 37),
+                    color: const Color.fromARGB(255, 36, 139, 55),
                     size: 40,
                   ),
                 ),
@@ -46,7 +46,7 @@ class FloatingNavigationBar extends StatelessWidget {
                           navigateScreen.changeScreen(context, MapScreen()),
                   icon: Icon(
                     Icons.delete_outline,
-                    color: const Color.fromARGB(255, 36, 95, 37),
+                    color: const Color.fromARGB(255, 36, 139, 55),
                     size: 40,
                   ),
                 ),
@@ -56,7 +56,7 @@ class FloatingNavigationBar extends StatelessWidget {
                           navigateScreen.changeScreen(context, ConfigScreen()),
                   icon: Icon(
                     Icons.person_outline,
-                    color: const Color.fromARGB(255, 36, 95, 37),
+                    color: const Color.fromARGB(255, 36, 139, 55),
                     size: 40,
                   ),
                 ),
