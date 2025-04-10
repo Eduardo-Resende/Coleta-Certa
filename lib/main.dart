@@ -1,4 +1,4 @@
-import 'package:coleta_certa/screens/main_screen.dart';
+import 'package:coleta_certa/screens/home_screen.dart';
 import 'package:coleta_certa/screens/user_request.dart';
 import 'package:coleta_certa/ui/user.dart';
 import 'package:flutter/material.dart';
@@ -15,24 +15,24 @@ Future<void> main() async {
 
   final userProvider = UserProvider();
 
-    if (name != null && cep != null) {
+  if (name != null && cep != null) {
     userProvider.setUsuario(User(name: name, cep: cep));
   }
 
   runApp(ChangeNotifierProvider(
-      create: (_) => userProvider,
-      child: ColetaCertaApp(isFirstTime: isFirstTime,),
-    ),);
+    create: (_) => userProvider,
+    child: ColetaCertaApp(isFirstTime: isFirstTime,),
+  ),);
 }
 
 class ColetaCertaApp extends StatelessWidget{
   final bool isFirstTime;
   const ColetaCertaApp({super.key, required this.isFirstTime});
-  
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: isFirstTime ? UserRequest() : MainScreen(), 
+      home: isFirstTime ? UserRequest() : HomeScreen(),
     );
   }
 }

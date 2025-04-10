@@ -1,6 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:coleta_certa/screens/main_screen.dart';
+import 'package:coleta_certa/screens/home_screen.dart';
 import 'package:coleta_certa/ui/navigate_screen.dart';
 import 'package:coleta_certa/ui/user.dart';
 import 'package:coleta_certa/ui/validate_cep.dart';
@@ -56,40 +56,47 @@ class _UserRequestState extends State<UserRequest> {
                     return null;
                   },
                 ),
-                ElevatedButton(
-                  onPressed: () async {
-                    if (formKey.currentState!.validate()) {
-                      final valido = await validateCep.validaCep(
-                        cepController.text,
-                      );
-
-                      if (!valido) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text('CEP não encontrado'),
-                            backgroundColor: Colors.red,
-                          ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.grey[200],
+                      foregroundColor: const Color.fromARGB(255, 36, 139, 55),
+                    ),
+                    onPressed: () async {
+                      if (formKey.currentState!.validate()) {
+                        final valido = await validateCep.validaCep(
+                          cepController.text,
                         );
-                        return;
+
+                        if (!valido) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text('CEP não encontrado'),
+                              backgroundColor: Colors.red,
+                            ),
+                          );
+                          return;
+                        }
+
+                        User user = User(
+                          name: nameController.text,
+                          cep: cepController.text,
+                        );
+
+                        Provider.of<UserProvider>(
+                          context,
+                          listen: false,
+                        ).setUsuario(user);
+                        await Provider.of<UserProvider>(
+                          context,
+                          listen: false,
+                        ).saveUser(user);
+                        navigateScreen.changeScreen(context, HomeScreen());
                       }
-
-                      User user = User(
-                        name: nameController.text,
-                        cep: cepController.text,
-                      );
-
-                      Provider.of<UserProvider>(
-                        context,
-                        listen: false,
-                      ).setUsuario(user);
-                      await Provider.of<UserProvider>(
-                        context,
-                        listen: false,
-                      ).saveUser(user);
-                      navigateScreen.changeScreen(context, MainScreen());
-                    }
-                  },
-                  child: Text("Entrar"),
+                    },
+                    child: Text("Entrar"),
+                  ),
                 ),
               ],
             ),
