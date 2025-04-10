@@ -65,11 +65,11 @@ class _UserRequestState extends State<UserRequest> {
                     ),
                     onPressed: () async {
                       if (formKey.currentState!.validate()) {
-                        final valido = await validateCep.validaCep(
+                        final result = await validateCep.validaCep(
                           cepController.text,
                         );
 
-                        if (!valido) {
+                        if (result == null) {
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
                               content: Text('CEP não encontrado'),
@@ -82,6 +82,8 @@ class _UserRequestState extends State<UserRequest> {
                         User user = User(
                           name: nameController.text,
                           cep: cepController.text,
+                          latitude: result['latitude'],
+                          longitude: result['longitude'],
                         );
 
                         Provider.of<UserProvider>(

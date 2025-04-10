@@ -2,12 +2,15 @@ import 'package:coleta_certa/screens/home_screen.dart';
 import 'package:coleta_certa/screens/user_request.dart';
 import 'package:coleta_certa/ui/user.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: ".env");
   SharedPreferences prefs = await SharedPreferences.getInstance();
+  
 
   bool isFirstTime = prefs.getBool('first_time') ?? true;
   String? name = prefs.getString('nome');
