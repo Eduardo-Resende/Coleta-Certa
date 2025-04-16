@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'theme_colors.dart';
 
 class AppTheme {
@@ -34,5 +35,32 @@ class AppTheme {
         bodyMedium: TextStyle(color: ThemeColors.darkText),
       ),
     );
+  }
+}
+
+class ThemeProvider extends ChangeNotifier {
+  bool _isDarkMode = false;
+
+  bool get isDarkMode => _isDarkMode;
+
+  ThemeProvider() {
+    _loadTheme();
+  }
+
+  void toggleTheme(bool isOn) {
+    _isDarkMode = isOn;
+    _saveTheme(isOn);
+    notifyListeners();
+  }
+
+  Future<void> _loadTheme() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    _isDarkMode = prefs.getBool('isDarkMode') ?? false;
+    notifyListeners();
+  }
+
+  Future<void> _saveTheme(bool isOn) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('isDarkMode', isOn);
   }
 }

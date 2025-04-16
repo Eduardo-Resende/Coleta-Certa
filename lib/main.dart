@@ -11,36 +11,42 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: ".env");
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  
 
   bool isFirstTime = prefs.getBool('first_time') ?? true;
   String? name = prefs.getString('nome');
   String? cep = prefs.getString('cep');
 
   final userProvider = UserProvider();
-
   if (name != null && cep != null) {
     userProvider.setUsuario(User(name: name, cep: cep));
   }
 
-  runApp(ChangeNotifierProvider(
-    create: (_) => userProvider,
-    child: ColetaCertaApp(isFirstTime: isFirstTime,),
-  ),);
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => userProvider),
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
+      ],
+      child: ColetaCertaApp(isFirstTime: isFirstTime),
+    ),
+  );
 }
 
-class ColetaCertaApp extends StatelessWidget{
+class ColetaCertaApp extends StatelessWidget {
   final bool isFirstTime;
+
   const ColetaCertaApp({super.key, required this.isFirstTime});
 
   @override
   Widget build(BuildContext context) {
+    final themeProvider = Provider.of<ThemeProvider>(context);
+
     return MaterialApp(
       title: 'Coleta Certa',
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      themeMode: ThemeMode.system,
-      home: isFirstTime ? UserRequest() : HomeScreen(),
+      themeMode: themeProvider.isDarkMode ? ThemeMode.dark : ThemeMode.light,
+      home: isFirstTime ? const UserRequest() : const HomeScreen(),
     );
   }
 }

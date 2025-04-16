@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 
+
 class ConfigItem extends StatefulWidget {
   final IconData icon;
   final String text;
+  final void Function(bool) onToggle;
 
-  const ConfigItem({super.key, required this.icon, required this.text});
+  const ConfigItem({
+    super.key,
+    required this.icon,
+    required this.text,
+    required this.onToggle,
+  });
 
   @override
   State<ConfigItem> createState() => _ConfigState();
@@ -26,7 +33,7 @@ class _ConfigState extends State<ConfigItem> {
             Icon(widget.icon, color: Colors.white, size: 70),
             Text(
               widget.text,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
@@ -34,16 +41,16 @@ class _ConfigState extends State<ConfigItem> {
             ),
             Switch(
               value: isOn,
-              onChanged: (bool newValue) {
+              onChanged: (newValue) {
                 setState(() {
                   isOn = newValue;
                 });
+                widget.onToggle(newValue);
               },
               activeColor: Colors.green,
               inactiveThumbColor: Colors.grey,
               activeTrackColor: Colors.lightGreenAccent,
               inactiveTrackColor: Colors.grey[400],
-              padding: const EdgeInsets.all(8.0),
             ),
           ],
         ),
@@ -51,3 +58,5 @@ class _ConfigState extends State<ConfigItem> {
     );
   }
 }
+
+

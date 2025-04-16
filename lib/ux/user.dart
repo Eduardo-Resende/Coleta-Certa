@@ -30,7 +30,7 @@ class UserProvider with ChangeNotifier {
     await prefs.setString('nome', user.name);
     await prefs.setString('cep', user.cep);
     await prefs.setDouble('latitude', user.latitude ?? 0.0);
-    await prefs.setDouble('latitudelongitude', user.longitude ?? 0.0);
+    await prefs.setDouble('longitude', user.longitude ?? 0.0);
     await prefs.setBool('first_time', false);
   }
 
@@ -40,7 +40,7 @@ class UserProvider with ChangeNotifier {
     String? cep = prefs.getString('cep');
     double? latitude = prefs.getDouble('latitude');
     double? longitude = prefs.getDouble('longitude');
-
+    
     if (nome != null && cep != null) {
       setUsuario(User(name: nome, cep: cep, latitude: latitude, longitude: longitude));
     }
