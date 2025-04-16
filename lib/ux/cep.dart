@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-class ValidateCep {
+class Cep {
 Future<Map<String, dynamic>?> validaCep(String cep) async {
   final response = await http.get(Uri.parse('https://viacep.com.br/ws/$cep/json/'));
 

@@ -1,4 +1,4 @@
-import 'package:coleta_certa/ui/user.dart';
+import 'package:coleta_certa/ux/user.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';

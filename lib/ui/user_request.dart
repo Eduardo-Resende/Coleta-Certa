@@ -1,9 +1,9 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:coleta_certa/screens/home_screen.dart';
-import 'package:coleta_certa/ui/navigate_screen.dart';
-import 'package:coleta_certa/ui/user.dart';
-import 'package:coleta_certa/ui/validate_cep.dart';
+import 'package:coleta_certa/ui/home_screen.dart';
+import 'package:coleta_certa/ux/navigate_screen.dart';
+import 'package:coleta_certa/ux/user.dart';
+import 'package:coleta_certa/ux/cep.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -18,7 +18,7 @@ class _UserRequestState extends State<UserRequest> {
   @override
   Widget build(BuildContext context) {
     final NavigateScreen navigateScreen = NavigateScreen();
-    final ValidateCep validateCep = ValidateCep();
+    final Cep validateCep = Cep();
     final formKey = GlobalKey<FormState>();
     final TextEditingController nameController = TextEditingController();
     final TextEditingController cepController = TextEditingController();

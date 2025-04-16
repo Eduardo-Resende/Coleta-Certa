@@ -1,4 +1,4 @@
-import 'package:coleta_certa/ui/navigate_screen.dart';
+import 'package:coleta_certa/ux/navigate_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainButton extends StatelessWidget {

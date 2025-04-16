@@ -1,8 +1,8 @@
-import 'package:coleta_certa/screens/about_the_app_screen.dart';
-import 'package:coleta_certa/ui/config_item.dart';
-import 'package:coleta_certa/ui/config_navegator.dart';
-import 'package:coleta_certa/ui/floating_navigation_bar.dart';
-import 'package:coleta_certa/ui/navigate_screen.dart';
+import 'package:coleta_certa/ui/about_the_app_screen.dart';
+import 'package:coleta_certa/ux/config_item.dart';
+import 'package:coleta_certa/ux/config_navegator.dart';
+import 'package:coleta_certa/ux/floating_navigation_bar.dart';
+import 'package:coleta_certa/ux/navigate_screen.dart';
 import 'package:flutter/material.dart';
 
 class ConfigScreen extends StatelessWidget {

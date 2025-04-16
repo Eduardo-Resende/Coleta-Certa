@@ -1,7 +1,7 @@
-import 'package:coleta_certa/screens/config_screen.dart';
-import 'package:coleta_certa/screens/home_screen.dart';
-import 'package:coleta_certa/screens/map_screen.dart';
-import 'package:coleta_certa/ui/navigate_screen.dart';
+import 'package:coleta_certa/ui/config_screen.dart';
+import 'package:coleta_certa/ui/home_screen.dart';
+import 'package:coleta_certa/ui/map_screen.dart';
+import 'package:coleta_certa/ux/navigate_screen.dart';
 import 'package:flutter/material.dart';
 
 class FloatingNavigationBar extends StatelessWidget {

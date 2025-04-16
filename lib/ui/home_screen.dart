@@ -1,14 +1,14 @@
-import 'package:coleta_certa/screens/config_screen.dart';
-import 'package:coleta_certa/screens/horario_coleta_screen.dart';
-import 'package:coleta_certa/screens/lixo_reciclavel_screen.dart';
-import 'package:coleta_certa/screens/locais_favoritos_screen.dart';
-import 'package:coleta_certa/screens/map_screen.dart';
-import 'package:coleta_certa/screens/ponto_de_descarte_screen.dart';
-import 'package:coleta_certa/ui/floating_navigation_bar.dart';
-import 'package:coleta_certa/ui/main_button.dart';
-import 'package:coleta_certa/ui/main_info_box.dart';
-import 'package:coleta_certa/ui/navigate_screen.dart';
-import 'package:coleta_certa/ui/user.dart';
+import 'package:coleta_certa/ui/config_screen.dart';
+import 'package:coleta_certa/ui/horario_coleta_screen.dart';
+import 'package:coleta_certa/ui/lixo_reciclavel_screen.dart';
+import 'package:coleta_certa/ui/locais_favoritos_screen.dart';
+import 'package:coleta_certa/ui/map_screen.dart';
+import 'package:coleta_certa/ui/ponto_de_descarte_screen.dart';
+import 'package:coleta_certa/ux/floating_navigation_bar.dart';
+import 'package:coleta_certa/ux/main_button.dart';
+import 'package:coleta_certa/ux/main_info_box.dart';
+import 'package:coleta_certa/ux/navigate_screen.dart';
+import 'package:coleta_certa/ux/user.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
