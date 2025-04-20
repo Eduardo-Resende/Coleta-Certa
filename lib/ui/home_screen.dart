@@ -1,3 +1,4 @@
+import 'package:coleta_certa/debug_data_screen.dart';
 import 'package:coleta_certa/ui/config_screen.dart';
 import 'package:coleta_certa/ui/horario_coleta_screen.dart';
 import 'package:coleta_certa/ui/lixo_reciclavel_screen.dart';
@@ -48,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   constraints: BoxConstraints(),
                   onPressed:
                       () =>
-                          navigateScreen.changeScreen(context, ConfigScreen()),
+                          navigateScreen.changeScreen(context, DebugDataScreen()),
                   icon: Icon(
                     Icons.live_help_outlined,
                     color: Colors.white,

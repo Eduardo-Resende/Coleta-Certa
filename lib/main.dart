@@ -1,3 +1,4 @@
+import 'package:coleta_certa/database/db.dart';
 import 'package:coleta_certa/ui/home_screen.dart';
 import 'package:coleta_certa/ui/user_request.dart';
 import 'package:coleta_certa/ux/app_theme.dart';
@@ -11,15 +12,11 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: ".env");
   SharedPreferences prefs = await SharedPreferences.getInstance();
+  await DB.instance.database;
 
   bool isFirstTime = prefs.getBool('first_time') ?? true;
-  String? name = prefs.getString('nome');
-  String? cep = prefs.getString('cep');
-
   final userProvider = UserProvider();
-  if (name != null && cep != null) {
-    userProvider.setUsuario(User(name: name, cep: cep));
-  }
+  await userProvider.loadUser();
 
   runApp(
     MultiProvider(

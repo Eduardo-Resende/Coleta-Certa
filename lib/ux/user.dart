@@ -40,9 +40,15 @@ class UserProvider with ChangeNotifier {
     String? cep = prefs.getString('cep');
     double? latitude = prefs.getDouble('latitude');
     double? longitude = prefs.getDouble('longitude');
-    
-    if (nome != null && cep != null) {
-      setUsuario(User(name: nome, cep: cep, latitude: latitude, longitude: longitude));
+
+    if (nome != null &&
+        cep != null &&
+        latitude != null &&
+        longitude != null &&
+        (latitude != 0.0 || longitude != 0.0)) {
+      setUsuario(
+        User(name: nome, cep: cep, latitude: latitude, longitude: longitude),
+      );
     }
   }
 }

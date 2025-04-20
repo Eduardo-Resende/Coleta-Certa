@@ -1,0 +1,978 @@
+[
+  {
+    "nomeBairro": "Aeroporto Internacional Santa Genoveva",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Aeroviário",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Água Branca",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Alphaville Flamboyant Residencial Araguaia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Alto da Glória",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Anhanguera",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Araguaia Park",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Área Rural de Goiânia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Bairro Santa Rita",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Balneário Gran Viena",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Boa Vista",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Campus Samambaia - UFG",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Capuava",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Capuava Residencial Privê",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Carolina Parque",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Carolina Parque Complemento",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Carolina Parque Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácara do Governador",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácara São José - PUC Campus II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Alto da Glória",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Anhanguera",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Bom Retiro",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Botafogo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Buritis",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Califórnia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chacaras Coimbra",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras de Recreio Samambaia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras de Recreio São Joaquim",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Dona Gê",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Helou",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Ipanema",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Mansões Rosas de Ouro",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Maringá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Nossa Senhora da Piedade",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Retiro",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Rio Branco",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Salinos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Santa Bárbara",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras Santa Rita",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras São José",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chácaras São Silvestre",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Chacaras Village Santa Rita",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Cidade Jardim",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Colônia Santa Marta",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Aeródromo Zezé Alves Ferreira",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Alto da Boa Vista",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Amin Camargo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Anhanguera",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Cidade Universitária",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio das Esmeraldas",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio do Lago 1ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio do Lago 2ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio dos Dourados",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Eldorado",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Ipanema",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Jardim das Oliveiras",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Marlene",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Parque dos Cisnes",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Privê das Oliveiras",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Privê dos Girassóis",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Residencial Parque Oeste",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Residencial Santa Maria I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Residencial Santa Rita",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Rio Branco",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Samambaia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Santa Rita",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Santa Rita - 2ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Santa Rita - 4ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Santa Rita - 6ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Santa Rita - 7ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Santa Rita - 8ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio Santa Rita - 9ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Condomínio União",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Anhanguera",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Cachoeira Dourada",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Fabiana",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Guadalajara",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Habitacional Baliza",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Habitacional Madre Germana II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Morada Nova",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Palmares",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Parque dos Eucaliptos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Primavera",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Residencial Aruanã I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Residencial Aruanã II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Residencial Aruanã III",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Residencial Costa Verde",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Residencial Irisville",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Residencial Irisville - 2ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Residencial Paulo Pacheco",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Residencial Rodoviário",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Residencial Yara",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Riviera",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Romildo Ferreira do Amaral",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Vera Cruz",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Conjunto Vila Isabel",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Da Vitória",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Distrito Vila Rica",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Elísio Campos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Esplanada do Anicuns",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Botafogo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Catingueiro",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Caveiras",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Caveiras - Residencial Bosque dos Buritis",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Colina",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Criméia Caveiras",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Dourados",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Dourados - Residencial Atibaia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Embira",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Gameleira",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Guanabara - Condomínio Parque Aroeira",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Guanabara - Condomínio Parque Ipê",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Ladeira",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Petrópolis - Residencial Monte Verde",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Planície Petrópolis",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Quebra Anzol - Residencial Portal dos Ipês I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Quebra Anzol - Residencial Portal dos Ipês II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Quebra Anzol - Residencial Portal dos Ipês III",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Retiro",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Retiro - Golden Shopping",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Salinos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Santa Maria",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Santa Rita",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Santa Rita - Conjunto Residencial Alto Oriente",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Santa Rita - Glebas B e B1",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Santa Rita - Goiânia Viva",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Santa Rita - Jardim Botânico",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Santa Rita - Quadra 01",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Santa Rita - Residencial Invent Total Club",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Santa Rita - Residencial Issa Costa VI",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Santa Rita - São Francisco",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda São Domingos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda São Domingos - Conjunto Residencial Campo Belo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda São Domingos - Conjunto Residencial Terra Nova",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda São José",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda São José - Residencial Celeste",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Fazenda Vau das Pombas",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Feliz",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Floresta",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Garavelo Residencial Norte",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Goiá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Goiá 2",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Goiá 2 Complemento",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Goiá IV",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Goiá Setor Veloso",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Goiânia 2",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Granja Agrícola Jacirema",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Granja Cruzeiro do Sul",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Granja Santos Dumont",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Industrial Mooca",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Ipiranga",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Abaporu",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Alphaville",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim América",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Ana Lúcia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Aritana",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Atlântico",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Balneário Meia Ponte",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Bela Vista",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Belvedere",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Bom Jesus",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Bonanza",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Botânico",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Brasil",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Califórnia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Califórnia Parque Industrial",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Caravelas 1ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Clarissa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Colorado",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Colorado Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Colorado I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Colorado II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Colorado Sul",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Conquista",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Corte Real",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Curitiba",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim da Luz",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim das Aroeiras",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim das Esmeraldas",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim das Hortências",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim das Rosas",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Diamantina",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Dom Fernando I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Dom Fernando II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Eli Forte",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Eli Fortes Complemento",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Europa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Florença",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Fonte Nova",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Fonte Nova I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Gardênia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Goiás",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Goiás - Área I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Gramado",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Gramado I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Guanabara",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Guanabara II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Guanabara III",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Guanabara IV",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Imperial",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Ipanema",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Ipê",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Itaipu",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Lageado",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Lago Azul",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Leblon",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Leblon II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Liberdade",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Luz",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Maria Helena",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Mariliza",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Marques de Abreu",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Mirabel",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Nova Esperança",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Novo Mundo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Novo Mundo Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Novo Mundo II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Novo Petrópolis",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Pampulha",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Petrópolis",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Planalto",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Presidente",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Presidente Extensão III",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Real",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Santa Cecília",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Santo Antônio",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim São José",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim São José I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Sônia Maria",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Vila Boa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Vista Bela",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardim Vitória",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardins Atenas",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardins França",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardins Itália",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardins Lisboa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardins Madri",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardins Madri Complemento",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardins Milão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardins Munique",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardins Paris",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardins Valência",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Jardins Verona",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Lorena Parque",
+    "idCidade": 1
+  }
+]
