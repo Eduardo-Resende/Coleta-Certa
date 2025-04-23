@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ConfigItem extends StatefulWidget {
   final IconData icon;
@@ -19,6 +19,24 @@ class ConfigItem extends StatefulWidget {
 
 class _ConfigState extends State<ConfigItem> {
   bool isOn = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadToggleState();
+  }
+
+  Future<void> _loadToggleState() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      isOn = prefs.getBool(widget.text) ?? false;
+    });
+  }
+
+  Future<void> _saveToggleState(bool value) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(widget.text, value);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -46,6 +64,7 @@ class _ConfigState extends State<ConfigItem> {
                   isOn = newValue;
                 });
                 widget.onToggle(newValue);
+                _saveToggleState(newValue);
               },
               activeColor: Colors.green,
               inactiveThumbColor: Colors.grey,
@@ -58,5 +77,3 @@ class _ConfigState extends State<ConfigItem> {
     );
   }
 }
-
-

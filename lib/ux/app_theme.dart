@@ -9,6 +9,25 @@ class AppTheme {
       scaffoldBackgroundColor: ThemeColors.lightBackground,
       primaryColor: ThemeColors.lightPrimary,
       cardColor: ThemeColors.lightCard,
+      colorScheme: ColorScheme.light(
+        primary: ThemeColors.lightPrimary,
+        onPrimary: Colors.white,
+        secondary: Colors.greenAccent,
+        onSecondary: Colors.black,
+        surface: ThemeColors.lightBackground,
+        onSurface: ThemeColors.lightText,
+      ),
+      inputDecorationTheme: const InputDecorationTheme(
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: ThemeColors.lightPrimary),
+        ),
+        labelStyle: TextStyle(color: ThemeColors.lightPrimary),
+        floatingLabelStyle: TextStyle(color: ThemeColors.lightPrimary),
+      ),
+      iconTheme: const IconThemeData(color: Colors.white),
+      textSelectionTheme: const TextSelectionThemeData(
+        cursorColor: ThemeColors.lightPrimary,
+      ),
       appBarTheme: const AppBarTheme(
         backgroundColor: ThemeColors.lightPrimary,
         foregroundColor: ThemeColors.lightText,
@@ -26,6 +45,25 @@ class AppTheme {
       scaffoldBackgroundColor: ThemeColors.darkBackground,
       primaryColor: ThemeColors.darkPrimary,
       cardColor: ThemeColors.darkCard,
+      colorScheme: ColorScheme.dark(
+        primary: ThemeColors.darkPrimary,
+        onPrimary: Colors.black,
+        secondary: Colors.greenAccent,
+        onSecondary: Colors.white,
+        surface: ThemeColors.darkBackground,
+        onSurface: ThemeColors.darkText,
+      ),
+      inputDecorationTheme: const InputDecorationTheme(
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: ThemeColors.darkPrimary),
+        ),
+        labelStyle: TextStyle(color: ThemeColors.darkPrimary),
+        floatingLabelStyle: TextStyle(color: ThemeColors.darkPrimary),
+      ),
+      iconTheme: const IconThemeData(color: Colors.white),
+      textSelectionTheme: const TextSelectionThemeData(
+        cursorColor: ThemeColors.darkPrimary,
+      ),
       appBarTheme: const AppBarTheme(
         backgroundColor: ThemeColors.darkPrimary,
         foregroundColor: ThemeColors.darkText,

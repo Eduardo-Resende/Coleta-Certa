@@ -112,7 +112,7 @@ class DB {
       idTipoColeta INTEGER NOT NULL,
       idBairro INTEGER NOT NULL,
       idDia INTEGER NOT NULL,
-      Horario TEXT NOT NULL,
+      horario TEXT NOT NULL,
       FOREIGN KEY (idEmpresa) REFERENCES empresa_coleta(idEmpresa),
       FOREIGN KEY (idTipoColeta) REFERENCES tipo_coleta(idTipoColeta),
       FOREIGN KEY (idBairro) REFERENCES bairro(idBairro),
@@ -147,6 +147,9 @@ class DB {
 
     //Insert Tabela bairro
     await _inserirBairros(db);
+
+    //Insert Tabela horario_coleta
+    await _inserirHorarios(db);
   }
 
   //Função de inserir dados bairros por arquivo json
@@ -161,6 +164,25 @@ class DB {
       batch.insert('bairro', {
         'nomeBairro': bairro['nomeBairro'],
         'idCidade': bairro['idCidade'],
+      });
+    }
+    await batch.commit(noResult: true);
+  }
+
+    Future<void> _inserirHorarios(Database db) async {
+    final String jsonString = await rootBundle.loadString(
+      'lib/assets/data/horarios.json',
+    );
+    final List<dynamic> horarios = jsonDecode(jsonString);
+
+    final batch = db.batch();
+    for (var horario in horarios) {
+      batch.insert('horario_coleta', {
+        'idEmpresa': horario['idEmpresa'],
+        'idTipoColeta': horario['idTipoColeta'],
+        'idBairro': horario['idBairro'],
+        'idDia': horario['idDia'],
+        'horario': horario['horario'],
       });
     }
     await batch.commit(noResult: true);

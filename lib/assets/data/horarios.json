@@ -1,0 +1,2865 @@
+[
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 3,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 5,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 11,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 13,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 15,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 16,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 17,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 18,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 19,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 20,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 21,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 22,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 23,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 23,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 24,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 25,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 26,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 26,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 26,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 27,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 28,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 29,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 30,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 31,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 32,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 32,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 33,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 33,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 33,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 34,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 34,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 34,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 35,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 36,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 37,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 38,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 39,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 40,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 41,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 42,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 43,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 44,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 45,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 46,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 47,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 48,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 49,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 50,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 51,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 52,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 53,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 54,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 55,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 56,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 57,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 58,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 59,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 60,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 61,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 62,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 63,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 64,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 65,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 66,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 67,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 68,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 69,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 70,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 71,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 72,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 73,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 74,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 75,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 76,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 77,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 78,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 79,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 80,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 81,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 82,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 83,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 84,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 85,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 86,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 87,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 87,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 88,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 89,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 90,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 91,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 92,
+    "idDia": 1,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 93,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 94,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 94,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 95,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 96,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 97,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 98,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 99,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 100,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 101,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 101,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 102,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 103,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 104,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 105,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 105,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 106,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 107,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 108,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 109,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 110,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 111,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 112,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 113,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 114,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 115,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 116,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 117,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 118,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 119,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 120,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 121,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 122,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 123,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 124,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 125,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 126,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 127,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 128,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 129,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 130,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 131,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 132,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 133,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 134,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 135,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 136,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 137,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 137,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 138,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 139,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 140,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 140,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 141,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 142,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 143,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 144,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 145,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 146,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 147,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 148,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 149,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 150,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 151,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 152,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 153,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 154,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 155,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 156,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 157,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 158,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 159,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 160,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 161,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 162,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 163,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 164,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 165,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 166,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 167,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 168,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 169,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 169,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 170,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 171,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 172,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 173,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 173,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 174,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 175,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 176,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 177,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 177,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 177,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 178,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 179,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 179,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 179,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 180,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 180,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 180,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 181,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 182,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 183,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 184,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 185,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 186,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 187,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 188,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 189,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 190,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 191,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 192,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 193,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 194,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 195,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 196,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 197,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 198,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 199,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 200,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 201,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 202,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 203,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 204,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 205,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 206,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 207,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 208,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 209,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 210,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 210,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 211,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 211,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 212,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 213,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 214,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 215,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 216,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 217,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 218,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 219,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 220,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 221,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 222,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 223,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 224,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 225,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 225,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 226,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 227,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 228,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 229,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 230,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 231,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 232,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 233,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 234,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 235,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 236,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 237,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 238,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 238,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 238,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 239,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 240,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 241,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 242,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 243,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 244,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 245,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 246,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 247,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 248,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 249,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 250,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 251,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 252,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 253,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 254,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 255,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 256,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 257,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 258,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 259,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 260,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 261,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 262,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 263,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 264,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 265,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 266,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 267,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 268,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 269,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 270,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 271,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 271,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 271,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 272,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 273,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 274,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 275,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 276,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 277,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 278,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 279,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 280,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 281,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 282,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 283,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 284,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 285,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 286,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 287,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 288,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 289,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 290,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 291,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 292,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 293,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 294,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 295,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 296,
+    "idDia": 2,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 297,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 298,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 299,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 300,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 301,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 302,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 303,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 304,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 305,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 306,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 307,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 308,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 309,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 310,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 311,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 312,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 313,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 314,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 315,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 316,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 317,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 318,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 319,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 320,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 321,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 322,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 323,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 324,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 325,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 326,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 327,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 328,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 329,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 330,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 331,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 332,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 333,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 334,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 335,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 336,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 337,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 338,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 339,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 340,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 341,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 342,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 343,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 344,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 345,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 346,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 347,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 348,
+    "idDia": 4,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 349,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 350,
+    "idDia": 3,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 351,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 352,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 353,
+    "idDia": 3,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 354,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 355,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 356,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 357,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 358,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 358,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 358,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 359,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 359,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 359,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 360,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 361,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 362,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 363,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 364,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 365,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 366,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 367,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 368,
+    "idDia": 6,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 369,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 370,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 371,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 372,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 373,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 374,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 375,
+    "idDia": 5,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 376,
+    "idDia": 2,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 376,
+    "idDia": 4,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 376,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 377,
+    "idDia": 7,
+    "horario": "Diurno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 378,
+    "idDia": 6,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 379,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 380,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 381,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 382,
+    "idDia": 5,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 383,
+    "idDia": 7,
+    "horario": "Noturno"
+  },
+  {
+    "idEmpresa": 2,
+    "idTipoColeta": 1,
+    "idBairro": 384,
+    "idDia": 7,
+    "horario": "Noturno"
+  }
+]

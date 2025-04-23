@@ -21,6 +21,7 @@ Future<Map<String, dynamic>?> validaCep(String cep) async {
       return {
         'valid': true,
         'cep': cep,
+        'bairro': data['bairro'],
         'logradouro': data['logradouro'],
         'cidade': data['localidade'],
         'estado': data['uf'],

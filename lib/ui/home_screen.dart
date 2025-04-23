@@ -1,5 +1,4 @@
 import 'package:coleta_certa/debug_data_screen.dart';
-import 'package:coleta_certa/ui/config_screen.dart';
 import 'package:coleta_certa/ui/horario_coleta_screen.dart';
 import 'package:coleta_certa/ui/lixo_reciclavel_screen.dart';
 import 'package:coleta_certa/ui/locais_favoritos_screen.dart';
@@ -23,7 +22,6 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    final NavigateScreen navigateScreen = NavigateScreen();
     final user = Provider.of<UserProvider>(context).usuario;
 
     return Stack(
@@ -49,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   constraints: BoxConstraints(),
                   onPressed:
                       () =>
-                          navigateScreen.changeScreen(context, DebugDataScreen()),
+                          NavigateScreen.changeScreen(context, DebugDataScreen()),
                   icon: Icon(
                     Icons.live_help_outlined,
                     color: Colors.white,
@@ -146,7 +144,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         Center(
                           child: ElevatedButton(
                             onPressed:
-                                () => navigateScreen.changeScreen(
+                                () => NavigateScreen.changeScreen(
                                   context,
                                   MapScreen(),
                                 ),

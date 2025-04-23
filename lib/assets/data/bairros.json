@@ -974,5 +974,1853 @@
   {
     "nomeBairro": "Lorena Parque",
     "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Alphaville Residencial",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Areião I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Aruanã Park",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Celina Park",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Estâncias Vista Alegre",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Grande Retiro",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Granjas Brasil",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Mansões Goianas",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Mansões Pereira",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Morada dos Sonhos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Portal do Sol I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Portal do Sol II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Quinta do Rio Dourados",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Shangry-Lá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Tropical Verde",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Tropical Ville",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Tupynambá dos Reis",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Loteamento Vale Verde",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Moinho dos Ventos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Nossa Senhora de Fátima",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Nova Suiça",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Panorama Parque",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Park Lozandes",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Acalanto",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Aeródromo Antônio Sebba Filho",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Amazônia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Anhanguera",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Anhanguera II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Atheneu",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Balneário",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Bom Jesus",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Buriti",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Cidade",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque das Amendoeiras",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque das Amendoeiras I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque das Flores",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque das Laranjeiras",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque das Laranjeiras Acréscimo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque das Nações",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque das Paineiras (1,2,3 e 4 Etapa)",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Eldorado Oeste",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Eldorado Oeste Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Flamboyant",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Goiá Condomínio Clube",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Industrial de Goiânia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Industrial João Bras 2",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Industrial Paulista",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque João Braz - Cidade Industrial",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Maracanã",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Oeste Industrial",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Oeste Industrial Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Oeste Industrial Prolongamento",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Paraíso",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Santa Cruz",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Santa Maria",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Parque Santa Rita",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Privê Residencial Elza Fronza",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Privê Residencial Itanhangá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Recanto Barravento",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Recreio do Funcionário Público",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Recreio Panorama",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial 14 Bis",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial 14 Bis Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Acrópole II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Aldeia do Vale",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Alfa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Alice Barbosa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Alice Barbosa Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Alice Barbosa I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Alphaville Flamboyant",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Ana Clara",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Ana Moraes",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Anglo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Anicuns",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Antônio Barbosa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Antônio Carlos Pires",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Aquários",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Aquários II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Arco Verde",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Aruanã",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Atalaia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Balneário",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Barcelona",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Barravento",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Beatriz Nascimento",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Bela Goiânia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Belo Horizonte",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Belo Horizonte Complemento",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Bertim Belchior 1ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Bertim Belchior 2ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Bethel",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Brasil Central",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Brisas da Mata",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Brisas do Cerrado",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Buena Vista I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Buena Vista II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Buena Vista III",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Buena Vista IV",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Campos Dourados",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Campus",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Canadá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Carla Cristina",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Center Ville",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Cidade Verde",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Cléa Borges",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Costa Paranhos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial das Acácias",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Della Penna",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Della Penna Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Dezopi",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Dom Rafael",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial dos Ipês",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial dos Ipês Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Eldorado",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Eldorado Expansão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Eli Forte",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Eli Forte Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Elizene Santana",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Estrela Dalva",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Felicidade",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Fidelis",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Flamingo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Flórida",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Fonte das Águas",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Fortaleza",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Forteville",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Forteville Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Goiânia Golfe Clube",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Goiânia Viva",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Goyaz Park",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Granville",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Green Park",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Guanabara",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Guarema",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Havaí",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Havaí Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Hugo de Moraes",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Humaitá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Itaipu",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Itaipu I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Itália",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Itamaracá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardim Belvedere Expansão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardim Camargo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardim Helou",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardim Leblon",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardins do Cerrado 1",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardins do Cerrado 10",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardins do Cerrado 11",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardins do Cerrado 2",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardins do Cerrado 3",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardins do Cerrado 4",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardins do Cerrado 5",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardins do Cerrado 6",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardins do Cerrado 7",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardins do Cerrado 8",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Jardins do Cerrado 9",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial João Paulo II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial José Viandeli",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Junqueira",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Juscelino Kubitschek",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Kátia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Licardino Ney",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Linda Vista",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Lírios do Campo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial London Park",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Luana Park",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Luana Park Continuação",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Lucy Pinheiro",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Manhattan",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Mansões Paraíso",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Mar del Plata",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Maria Lourença",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Maringá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Mendanha",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Mirante",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Monte Carlo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Monte Pascoal",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Monte Pascoal II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Montes Claros",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Morada do Bosque",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Morada do Ipê",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Morumbi",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Mundo Novo 1",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Mundo Novo 2",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Mundo Novo 3",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Noroeste",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Nossa Morada",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Nossa Senhora Auxiliadora",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Nova Aurora",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Nunes de Morais 1ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Nunes de Morais 2ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Nunes de Morais 3ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Olinda",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Orlando Morais",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Ouro Preto",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Paraíso",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Park Solar",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Parque Mendanha",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Parque Oeste",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Paulo Estrela",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Perim",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Petrópolis",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Pilar dos Sonhos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Ponta Negra",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Portal da Mata",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Portal do Oriente",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Portal Santa Rita",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Portinari",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Porto Dourado",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Porto Seguro",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Português",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Primavera",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Privê Ilhas do Caribe",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Privê Norte",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Real",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Real Conquista",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Recanto das Emas",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Recanto das Garças",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Recanto do Bosque",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Recanto dos Buritis",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Recreio Panorama",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Recreio Panorama Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Rio Jordão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Rio Verde",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial San Marino",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Santa Efigênia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Santa Fé",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Santa Fé I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Santa Rita - 4ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial São Bernardo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial São Geraldo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial São Leopoldo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial São Leopoldo Complemento",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial São Marcos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Senador Albino Boaventura",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Senador Paranhos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Serra Azul Etapa I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Serra Azul II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Sevilha",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Shangri-lá I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Shangri-lá II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Solar Bougainville",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Solar Ville",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Sonho Dourado",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Sonho Verde",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Talismã",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Talismã I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Tatyane",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Tempo Novo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Tuzimoto",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Vale da Serra",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Vale das Brisas",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Vale do Araguaia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Vale dos Sonhos I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Vale dos Sonhos II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Vereda dos Buritis",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Village Campos Verdes",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Village Santa Rita I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Village Santa Rita II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Village Santa Rita III",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Village Santa Rita IV",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Ville de France",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Residencial Ytapuã",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Rodoviário",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Santa Genoveva",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Santa Genoveva 2",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Santo Hilário",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Santo Hilário Expansão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Santo Hilário II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "São Carlos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "São Domingos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "São Francisco",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Serrinha",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Aeroporto",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Alto do Vale",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Andréia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Areião II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Asa Branca",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Barra da Tijuca",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Bela Vista",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Bueno",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Campinas",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Cândida de Morais",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Castelo Branco",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Central",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Centro Oeste",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Coimbra",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Criméia Leste",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Criméia Oeste",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Cristina",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor das Nações",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor das Nações Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Delta Village",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor dos Afonsos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor dos Dourados",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor dos Funcionários",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Empresarial",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Estrela Dalva",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Expansão Grande Retiro",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Faiçalville",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Garavelo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Gentil Meireles",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Grajaú",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Jaó",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Jardim Ana Flávia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Leste Universitário",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Leste Vila Nova",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Marabá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Marabá Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Marechal Rondon",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Maria Celeste",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Maria Rosa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Marista",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Maysa Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Morada do Sol",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Morais",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Negrão de Lima",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Noroeste",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Norte Ferroviário",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Norte Ferroviário II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Nova Vila",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Novo Horizonte",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Novo Planalto",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Oeste",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Orientville",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Parque Tremendão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Pedro Ludovico",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Perim",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Perim Continuação",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Progresso",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Rasmussem",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Recanto das Minas Gerais",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Rio Formoso",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Santa Rita",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Santa Rita II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Santa Rita VII",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Santos Dumont",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor São José",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Sevene",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Sol Nascente",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Solar Santa Rita",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Sudoeste",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Sul",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Tancredo Neves",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Três Marias",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Três Marias I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Ulisses Guimarães",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor União",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Urias Magalhães",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Setor Urias Magalhães II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Sítio de Recreio Garavelo - Residencial Maratá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Sítio de Recreio Ipê",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Sítio de Recreio Mansões Bernardo Sayão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Sítio de Recreio Panorama",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Sítio de Recreio Paraíso Tropical",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Sítio de Recreio Pindorama",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Sítios de Recreio Caraíbas",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Sítios de Recreio dos Bandeirantes",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Sítios de Recreio Mansões do Campus",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Sítios de Recreio São Geraldo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Solange Park II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Solange Park III",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Solange Parque Complemento",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Solange Parque Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Solange Parque I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Abajá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Adélia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Adélia I e III",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Aguiar",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Alpes",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Alto da Glória",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Alvorada",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Americano do Brasil",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Anchieta",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Aurora Oeste",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Bandeirantes",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Bela",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Boa Sorte",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Canaã",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Clemente",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Colemar Natal e Silva",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Concórdia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Cristina",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Cristina Continuação",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Cristina Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Divino Pai Eterno",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila dos Oficiais",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila dos Subtenentes e Sargentos",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Felicidade",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Fernandes",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Finsocial",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Fróes",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Irany",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Isaura",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Itatiaia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Jacaré",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Jaraguá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Jardim Pompéia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Jardim São Judas Tadeu",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila João Vaz",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Legionárias",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Luciana",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Lucy",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Maria Dilce",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Maria José",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Maria Luiza",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Martins",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Martins Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Matilde",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Mauá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Megale",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Monticelli",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Mooca",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Mooca Complemento",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Morais",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Mutirão I",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Mutirão II",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Nossa Senhora Aparecida",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Nova Canaã",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Ofugi",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Oswaldo Rosa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Paraíso",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Pedroso",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Pedroso - Expansão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Perdiz",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Redenção",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Regina",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Rezende",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Rizzo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Romana",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Rosa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Santa Cruz",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Santa Efigênia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Santa Helena",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Santa Isabel",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Santa Maria - Conjunto Caiçara",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Santa Maria Extensão",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Santa Rita",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Santa Rita - 5ª Etapa",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Santa Rita Acréscimo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Santana",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Santo Afonso",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila São Francisco",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila São João",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila São José Complemento",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila São Luiz",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila São Paulo",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila São Tomaz",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Teófilo Neto",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Vera Cruz",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Viana",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Viandeli",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Xavier",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Vila Yate",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Village Atalaia",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Village Casa Grande",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Village Maringá",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Village Santa Rita",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Village Veneza",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Villar Baviera",
+    "idCidade": 1
+  },
+  {
+    "nomeBairro": "Zona Industrial Pedro Abrão",
+    "idCidade": 1
   }
 ]

@@ -17,7 +17,6 @@ class UserRequest extends StatefulWidget {
 class _UserRequestState extends State<UserRequest> {
   @override
   Widget build(BuildContext context) {
-    final NavigateScreen navigateScreen = NavigateScreen();
     final Cep validateCep = Cep();
     final formKey = GlobalKey<FormState>();
     final TextEditingController nameController = TextEditingController();
@@ -82,6 +81,7 @@ class _UserRequestState extends State<UserRequest> {
                         User user = User(
                           name: nameController.text,
                           cep: cepController.text,
+                          bairro: result['bairro'],
                           latitude: result['latitude'],
                           longitude: result['longitude'],
                         );
@@ -94,7 +94,7 @@ class _UserRequestState extends State<UserRequest> {
                           context,
                           listen: false,
                         ).saveUser(user);
-                        navigateScreen.changeScreen(context, HomeScreen());
+                        NavigateScreen.changeScreen(context, HomeScreen());
                       }
                     },
                     child: Text("Entrar"),

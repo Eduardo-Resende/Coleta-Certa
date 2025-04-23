@@ -17,14 +17,13 @@ class MainButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final NavigateScreen navigateScreen = NavigateScreen();
     return Column(
       children: [
         SizedBox(
           width: 70,
           height: 70,
           child: FloatingActionButton(
-            onPressed: () => navigateScreen.changeScreen(context, screen),
+            onPressed: () => NavigateScreen.changeScreen(context, screen),
             backgroundColor: Colors.green,
             heroTag: heroTag,
             child: Icon(icon, size: 60, color: Colors.white),

@@ -1,4 +1,5 @@
 import 'package:coleta_certa/ui/about_the_app_screen.dart';
+import 'package:coleta_certa/ui/user_settings_screen.dart';
 import 'package:coleta_certa/ux/app_theme.dart';
 import 'package:coleta_certa/ux/config_item.dart';
 import 'package:coleta_certa/ux/config_navegator.dart';
@@ -12,11 +13,7 @@ class ConfigScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final NavigateScreen navigateScreen = NavigateScreen();
-
-    // Aqui você acessa o ThemeProvider corretamente
     final themeProvider = Provider.of<ThemeProvider>(context, listen: false);
-
     return Stack(
       children: [
         Scaffold(
@@ -28,32 +25,30 @@ class ConfigScreen extends StatelessWidget {
               icon: Icon(Icons.arrow_back, color: Colors.white, size: 40),
               onPressed: () => Navigator.pop(context),
             ),
-            centerTitle: true,
-            title: Row(
-              children: [
-                Icon(Icons.settings, color: Colors.white, size: 40),
-                Text(
-                  'Configurações',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'cursive',
-                    fontSize: 40,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ],
+            title: Text(
+              'ColetaCerta',
+              style: TextStyle(
+                color: Colors.white,
+                fontFamily: 'nunito',
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
           body: ListView(
             children: [
+              ConfigNavegator(
+                icon: Icons.person_outline,
+                text: "Meu Perfil",
+                onTap:
+                    () => NavigateScreen.changeScreen(
+                      context,
+                      UserSettingsScreen(),
+                    ),
+              ),
               ConfigItem(
                 icon: Icons.location_on,
                 text: 'Localização',
-                onToggle: (_) {},
-              ),
-              ConfigItem(
-                icon: Icons.volume_up,
-                text: 'Sons do App',
                 onToggle: (_) {},
               ),
               ConfigItem(
@@ -65,14 +60,14 @@ class ConfigScreen extends StatelessWidget {
                 icon: Icons.dark_mode_outlined,
                 text: "Modo Escuro",
                 onToggle: (isOn) {
-                  themeProvider.toggleTheme(isOn); // esse já faz algo
+                  themeProvider.toggleTheme(isOn);
                 },
               ),
               ConfigNavegator(
                 icon: Icons.smartphone,
                 text: "Sobre o App",
                 onTap:
-                    () => navigateScreen.changeScreen(
+                    () => NavigateScreen.changeScreen(
                       context,
                       AboutTheAppScreen(),
                     ),

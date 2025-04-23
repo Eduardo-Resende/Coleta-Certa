@@ -9,7 +9,6 @@ class FloatingNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final NavigateScreen navigateScreen = NavigateScreen();
     return Positioned(
       left: 90,
       right: 90,
@@ -32,7 +31,7 @@ class FloatingNavigationBar extends StatelessWidget {
           children: [
             IconButton(
               onPressed:
-                  () => navigateScreen.changeScreen(context, HomeScreen()),
+                  () => NavigateScreen.changeScreen(context, HomeScreen()),
               icon: Icon(
                 Icons.house_outlined,
                 color: const Color.fromARGB(255, 36, 139, 55),
@@ -41,7 +40,7 @@ class FloatingNavigationBar extends StatelessWidget {
             ),
             IconButton(
               onPressed:
-                  () => navigateScreen.changeScreen(context, MapScreen()),
+                  () => NavigateScreen.changeScreen(context, MapScreen()),
               icon: Icon(
                 Icons.delete_outline,
                 color: const Color.fromARGB(255, 36, 139, 55),
@@ -50,7 +49,7 @@ class FloatingNavigationBar extends StatelessWidget {
             ),
             IconButton(
               onPressed:
-                  () => navigateScreen.changeScreen(context, ConfigScreen()),
+                  () => NavigateScreen.changeScreen(context, ConfigScreen()),
               icon: Icon(
                 Icons.person_outline,
                 color: const Color.fromARGB(255, 36, 139, 55),
