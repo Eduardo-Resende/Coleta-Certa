@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class ThemeColors {
   // Tema claro
-  static const Color lightBackground = Color.fromARGB(255, 215, 255, 210);
+  static const Color lightBackground = Colors.white;
   static const Color lightText = Colors.black;
   static const Color lightPrimary = Colors.green;
   static const Color lightCard = Color(0xFFF5F5F5);

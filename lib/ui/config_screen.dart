@@ -26,7 +26,7 @@ class ConfigScreen extends StatelessWidget {
               onPressed: () => Navigator.pop(context),
             ),
             title: Text(
-              'ColetaCerta',
+              'Configurações',
               style: TextStyle(
                 color: Colors.white,
                 fontFamily: 'nunito',

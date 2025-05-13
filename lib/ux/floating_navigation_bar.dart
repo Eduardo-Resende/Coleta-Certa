@@ -1,6 +1,6 @@
+import 'package:coleta_certa/debug_data_screen.dart';
 import 'package:coleta_certa/ui/config_screen.dart';
 import 'package:coleta_certa/ui/home_screen.dart';
-import 'package:coleta_certa/ui/map_screen.dart';
 import 'package:coleta_certa/ux/navigate_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -40,7 +40,7 @@ class FloatingNavigationBar extends StatelessWidget {
             ),
             IconButton(
               onPressed:
-                  () => NavigateScreen.changeScreen(context, MapScreen()),
+                  () => NavigateScreen.changeScreen(context, DebugDataScreen()),
               icon: Icon(
                 Icons.delete_outline,
                 color: const Color.fromARGB(255, 36, 139, 55),

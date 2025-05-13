@@ -1,6 +1,6 @@
 import 'package:coleta_certa/database/db.dart';
 import 'package:coleta_certa/ui/home_screen.dart';
-import 'package:coleta_certa/ui/user_request.dart';
+import 'package:coleta_certa/ux/user_request.dart';
 import 'package:coleta_certa/ux/app_theme.dart';
 import 'package:coleta_certa/ux/user.dart';
 import 'package:flutter/material.dart';

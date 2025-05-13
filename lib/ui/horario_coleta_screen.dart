@@ -1,6 +1,8 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:coleta_certa/database/db.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:http/http.dart' as http;
 
 class HorarioColetaScreen extends StatefulWidget {
   const HorarioColetaScreen({super.key});
@@ -27,29 +29,22 @@ class _HorarioColetaScreenState extends State<HorarioColetaScreen> {
 
     final resultado = await db.rawQuery(
       '''
-    SELECT 
-      B.nomeBairro as Bairro,
-      D.diaDaSemana as Dia,
-      H.horario as Turno
-    FROM horario_coleta H
-    INNER JOIN bairro B on B.idBairro = H.idBairro
-    INNER JOIN dia_semana D on D.idDia = H.idDia
-    WHERE H.idEmpresa = ? AND H.idTipoColeta = ? AND B.nomeBairro LIKE ?
-    ORDER BY B.nomeBairro, D.idDia
-  ''',
+      SELECT 
+        B.nomeBairro as Bairro,
+        D.diaDaSemana as Dia,
+        H.horario as Turno
+      FROM horario_coleta H
+      INNER JOIN bairro B on B.idBairro = H.idBairro
+      INNER JOIN dia_semana D on D.idDia = H.idDia
+      WHERE H.idEmpresa = ? AND H.idTipoColeta = ? AND B.nomeBairro LIKE ?
+      ORDER BY B.nomeBairro, D.idDia
+      ''',
       [filtros['empresa'], filtros['tipo'], '%$filtro%'],
     );
 
     setState(() {
       _horarios = resultado;
     });
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _carregarHorarios();
-    _carregarBairroSalvo();
   }
 
   Future<void> _carregarBairroSalvo() async {
@@ -59,6 +54,61 @@ class _HorarioColetaScreenState extends State<HorarioColetaScreen> {
       _buscaController.text = bairroSalvo;
     });
     await _carregarHorarios(filtro: bairroSalvo);
+  }
+
+  Future<void> _verificarBusca(String texto) async {
+    final somenteNumeros = texto.replaceAll(RegExp(r'\D'), '');
+
+    // Formatar automaticamente como 00000-000 se estiver digitando números
+    if (RegExp(r'^\d{0,8}$').hasMatch(somenteNumeros)) {
+      if (somenteNumeros.length >= 6) {
+        final formatado =
+            '${somenteNumeros.substring(0, 5)}-${somenteNumeros.substring(5)}';
+        if (_buscaController.text != formatado) {
+          _buscaController.value = TextEditingValue(
+            text: formatado,
+            selection: TextSelection.collapsed(offset: formatado.length),
+          );
+        }
+      }
+    }
+
+    // Se tiver 8 dígitos, tenta buscar o bairro pelo CEP
+    if (somenteNumeros.length == 8) {
+      final bairro = await _getBairroFromCep(somenteNumeros);
+      if (bairro != null) {
+        _buscaController.text = bairro;
+        await _carregarHorarios(filtro: bairro);
+        return;
+      }
+    }
+
+    // Caso contrário, busca normal por texto
+    await _carregarHorarios(filtro: texto);
+  }
+
+  Future<String?> _getBairroFromCep(String cep) async {
+    try {
+      final response = await http.get(
+        Uri.parse('https://viacep.com.br/ws/$cep/json/'),
+      );
+      if (response.statusCode == 200) {
+        final data = jsonDecode(response.body);
+        if (data.containsKey('erro')) return null;
+        return data['bairro'];
+      }
+    } catch (e) {
+      // ignore: avoid_print
+      print('Erro ao buscar CEP: $e');
+    }
+    return null;
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _carregarHorarios();
+    _carregarBairroSalvo();
   }
 
   @override
@@ -96,14 +146,12 @@ class _HorarioColetaScreenState extends State<HorarioColetaScreen> {
                 TextField(
                   controller: _buscaController,
                   decoration: InputDecoration(
-                    labelText: 'Buscar por bairro',
+                    labelText: 'Buscar por bairro ou CEP',
                     prefixIcon: Icon(Icons.search),
                     border: OutlineInputBorder(),
                   ),
                   onChanged: (value) {
-                    setState(() {
-                    });
-                    _carregarHorarios(filtro: value);
+                    _verificarBusca(value);
                   },
                 ),
                 const SizedBox(height: 12),
@@ -115,7 +163,7 @@ class _HorarioColetaScreenState extends State<HorarioColetaScreen> {
                       setState(() {
                         _selecaoAtual = novaOpcao;
                       });
-                      _carregarHorarios();
+                      _carregarHorarios(filtro: _buscaController.text);
                     }
                   },
                   items:
