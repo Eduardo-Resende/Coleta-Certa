@@ -14,33 +14,28 @@ class ConfigNavegator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 3.0),
-        child: InkWell(
-          onTap: onTap,
-          child: Container(
-            color: const Color.fromARGB(255, 36, 95, 37),
-            height: 80,
-            child: Row(
-              children: [
-                Icon(icon, color: Colors.white, size: 70),
-                Expanded(
-                  child: Center(
-                    child: Text(
-                      text,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-                Icon(Icons.arrow_forward, color: Colors.grey, size: 70),
-              ],
-            ),
-          ),
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        decoration: const BoxDecoration(
+          border: Border(bottom: BorderSide(color: Colors.grey, width: 1)),
         ),
+        height: 80,
+        child: Row(
+          children: [
+            Icon(icon, color: Colors.green, size: 70),
+            Expanded(
+              child: Center(
+                child: Text(
+                  text,
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+            Icon(Icons.arrow_forward, color: Colors.grey, size: 70),
+          ],
+        ),
+      ),
     );
   }
 }

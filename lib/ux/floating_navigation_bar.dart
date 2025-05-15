@@ -30,8 +30,15 @@ class FloatingNavigationBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconButton(
-              onPressed:
-                  () => NavigateScreen.changeScreen(context, HomeScreen()),
+              onPressed: () {
+                if (ModalRoute.of(context)?.settings.name != '/home') {
+                  NavigateScreen.changeScreen(
+                    context,
+                    HomeScreen(),
+                    routeName: '/home',
+                  );
+                }
+              },
               icon: Icon(
                 Icons.house_outlined,
                 color: const Color.fromARGB(255, 36, 139, 55),
@@ -39,8 +46,15 @@ class FloatingNavigationBar extends StatelessWidget {
               ),
             ),
             IconButton(
-              onPressed:
-                  () => NavigateScreen.changeScreen(context, DebugDataScreen()),
+              onPressed: () {
+                if (ModalRoute.of(context)?.settings.name != '/debug') {
+                  NavigateScreen.changeScreen(
+                    context,
+                    DebugDataScreen(),
+                    routeName: '/debug',
+                  );
+                }
+              },
               icon: Icon(
                 Icons.delete_outline,
                 color: const Color.fromARGB(255, 36, 139, 55),
@@ -48,8 +62,15 @@ class FloatingNavigationBar extends StatelessWidget {
               ),
             ),
             IconButton(
-              onPressed:
-                  () => NavigateScreen.changeScreen(context, ConfigScreen()),
+              onPressed: () {
+                if (ModalRoute.of(context)?.settings.name != '/config') {
+                  NavigateScreen.changeScreen(
+                    context,
+                    ConfigScreen(),
+                    routeName: '/config',
+                  );
+                }
+              },
               icon: Icon(
                 Icons.person_outline,
                 color: const Color.fromARGB(255, 36, 139, 55),

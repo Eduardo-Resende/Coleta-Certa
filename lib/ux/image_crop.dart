@@ -35,14 +35,38 @@ class _ImageCropScreenState extends State<ImageCropScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Ajustar Foto"),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.check),
-            onPressed: _cropAndReturn,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: ClipRRect(
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(20),
+            bottomRight: Radius.circular(20),
           ),
-        ],
+          child: AppBar(
+            backgroundColor: const Color.fromARGB(255, 36, 139, 55),
+            shadowColor: Colors.black,
+            elevation: 10,
+            leading: IconButton(
+              icon: Icon(Icons.arrow_back, color: Colors.white, size: 40),
+              onPressed: () => Navigator.pop(context),
+            ),
+            title: Text(
+              'Ajustar Foto',
+              style: TextStyle(
+                color: Colors.white,
+                fontFamily: 'nunito',
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.check, color: Colors.white, size: 40),
+                onPressed: _cropAndReturn,
+              ),
+            ],
+          ),
+        ),
       ),
       body: ExtendedImage.file(
         widget.imageFile,
@@ -50,12 +74,13 @@ class _ImageCropScreenState extends State<ImageCropScreen> {
         mode: ExtendedImageMode.editor,
         extendedImageEditorKey: _editorKey,
         cacheRawData: true,
-        initEditorConfigHandler: (state) => EditorConfig(
-          maxScale: 8.0,
-          cropRectPadding: const EdgeInsets.all(20.0),
-          hitTestSize: 20.0,
-          cropAspectRatio: 1, // Círculo/Quadrado
-        ),
+        initEditorConfigHandler:
+            (state) => EditorConfig(
+              maxScale: 8.0,
+              cropRectPadding: const EdgeInsets.all(20.0),
+              hitTestSize: 20.0,
+              cropAspectRatio: 1, // Círculo/Quadrado
+            ),
       ),
     );
   }
@@ -71,12 +96,12 @@ Future<Uint8List?> cropImageDataWithNativeLibrary({
   if (image == null) return null;
 
   final img.Image cropped = img.copyCrop(
-  image,
-  x: cropRect.left.toInt(),
-  y: cropRect.top.toInt(),
-  width: cropRect.width.toInt(),
-  height: cropRect.height.toInt(),
-);
+    image,
+    x: cropRect.left.toInt(),
+    y: cropRect.top.toInt(),
+    width: cropRect.width.toInt(),
+    height: cropRect.height.toInt(),
+  );
 
   return Uint8List.fromList(img.encodeJpg(cropped));
 }

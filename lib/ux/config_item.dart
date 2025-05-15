@@ -40,39 +40,34 @@ class _ConfigState extends State<ConfigItem> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 3.0),
-      child: Container(
-        color: const Color.fromARGB(255, 36, 95, 37),
-        height: 80,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Icon(widget.icon, color: Colors.white, size: 70),
-            Text(
-              widget.text,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            Switch(
-              value: isOn,
-              onChanged: (newValue) {
-                setState(() {
-                  isOn = newValue;
-                });
-                widget.onToggle(newValue);
-                _saveToggleState(newValue);
-              },
-              activeColor: Colors.green,
-              inactiveThumbColor: Colors.grey,
-              activeTrackColor: Colors.lightGreenAccent,
-              inactiveTrackColor: Colors.grey[400],
-            ),
-          ],
-        ),
+    return Container(
+      decoration: const BoxDecoration(
+        border: Border(bottom: BorderSide(color: Colors.grey, width: 1)),
+      ),
+      height: 80,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Icon(widget.icon, color: Colors.green, size: 70),
+          Text(
+            widget.text,
+            style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+          ),
+          Switch(
+            value: isOn,
+            onChanged: (newValue) {
+              setState(() {
+                isOn = newValue;
+              });
+              widget.onToggle(newValue);
+              _saveToggleState(newValue);
+            },
+            activeColor: Colors.green,
+            inactiveThumbColor: Colors.grey,
+            activeTrackColor: Colors.lightGreenAccent,
+            inactiveTrackColor: Colors.grey[400],
+          ),
+        ],
       ),
     );
   }

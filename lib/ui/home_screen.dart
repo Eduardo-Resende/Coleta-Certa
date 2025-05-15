@@ -133,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Rastreamento em Tempo Real",
+                          "Localização dos pontos de Descarte",
                           style: TextStyle(
                             fontFamily: 'League Spartan',
                             fontSize: 20,

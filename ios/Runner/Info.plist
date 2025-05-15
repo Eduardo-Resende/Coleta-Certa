@@ -65,7 +65,11 @@
 	<string>Precisamos da câmera para tirar fotos.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Precisamos acessar suas fotos para selecionar imagens.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Precisamos do microfone para gravar vídeos.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+
+	<!-- Geolocator -->
+	<string>Precisamos da sua localização para mostrar ecopontos próximos.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Precisamos da sua localização mesmo em segundo plano (se necessário).</string>
 </dict>
 </plist>

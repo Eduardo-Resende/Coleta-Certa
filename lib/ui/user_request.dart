@@ -33,6 +33,7 @@ class _UserRequestState extends State<UserRequest> {
               children: [
                 Image.asset('lib/assets/img/coleta_certa_sem_fundo.png'),
                 TextFormField(
+                  maxLength: 15,
                   decoration: InputDecoration(label: Text("Nome")),
                   controller: nameController,
                   validator: (value) {

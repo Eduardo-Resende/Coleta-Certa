@@ -153,6 +153,7 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
               const SizedBox(height: 24),
               TextFormField(
                 controller: _nameController,
+                maxLength: 15,
                 decoration: const InputDecoration(labelText: 'Nome'),
                 validator:
                     (value) =>
