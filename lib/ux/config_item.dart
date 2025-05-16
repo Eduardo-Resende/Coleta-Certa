@@ -44,30 +44,42 @@ class _ConfigState extends State<ConfigItem> {
       decoration: const BoxDecoration(
         border: Border(bottom: BorderSide(color: Colors.grey, width: 1)),
       ),
-      height: 80,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Icon(widget.icon, color: Colors.green, size: 70),
-          Text(
-            widget.text,
-            style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-          ),
-          Switch(
-            value: isOn,
-            onChanged: (newValue) {
-              setState(() {
-                isOn = newValue;
-              });
-              widget.onToggle(newValue);
-              _saveToggleState(newValue);
-            },
-            activeColor: Colors.green,
-            inactiveThumbColor: Colors.grey,
-            activeTrackColor: Colors.lightGreenAccent,
-            inactiveTrackColor: Colors.grey[400],
-          ),
-        ],
+      height: 60,
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              children: [
+                Icon(widget.icon, color: Colors.green, size: 40),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    widget.text,
+                    style: const TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Switch(
+              value: isOn,
+              onChanged: (newValue) {
+                setState(() {
+                  isOn = newValue;
+                });
+                widget.onToggle(newValue);
+                _saveToggleState(newValue);
+              },
+              activeColor: Colors.green,
+              inactiveThumbColor: Colors.grey,
+              activeTrackColor: Colors.lightGreenAccent,
+              inactiveTrackColor: Colors.grey[400],
+            ),
+          ],
+        ),
       ),
     );
   }

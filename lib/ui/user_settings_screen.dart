@@ -35,28 +35,29 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
   }
 
   Future<void> _pickImage() async {
-  final pickedFile = await ImagePicker().pickImage(
-    source: ImageSource.gallery,
-  );
-
-  if (pickedFile != null) {
-    final imageFile = File(pickedFile.path);
-
-    // Navegação para a tela de recorte
-    final croppedImagePath = await Navigator.push<String>(
-      context,
-      MaterialPageRoute(
-        builder: (context) => ImageCropScreen(imageFile: imageFile),
-      ),
+    final pickedFile = await ImagePicker().pickImage(
+      source: ImageSource.gallery,
     );
 
-    if (croppedImagePath != null) {
-      setState(() {
-        _photoPath = croppedImagePath; // Atualiza o caminho da imagem recortada
-      });
+    if (pickedFile != null) {
+      final imageFile = File(pickedFile.path);
+
+      // Navegação para a tela de recorte
+      final croppedImagePath = await Navigator.push<String>(
+        context,
+        MaterialPageRoute(
+          builder: (context) => ImageCropScreen(imageFile: imageFile),
+        ),
+      );
+
+      if (croppedImagePath != null) {
+        setState(() {
+          _photoPath =
+              croppedImagePath; // Atualiza o caminho da imagem recortada
+        });
+      }
     }
   }
-}
 
   Future<void> _saveUserChanges() async {
     if (_formKey.currentState!.validate()) {
@@ -94,22 +95,32 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.white, size: 40),
-          onPressed: () => Navigator.pop(context),
-        ),
-        title: const Text(
-          'Meu Perfil',
-          style: TextStyle(
-            color: Colors.white,
-            fontFamily: 'nunito',
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: ClipRRect(
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(20),
+            bottomRight: Radius.circular(20),
+          ),
+          child: AppBar(
+            leading: IconButton(
+              icon: Icon(Icons.arrow_back, color: Colors.white, size: 40),
+              onPressed: () => Navigator.pop(context),
+            ),
+            title: const Text(
+              'Editar Perfil',
+              style: TextStyle(
+                color: Colors.white,
+                fontFamily: 'nunito',
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            backgroundColor: const Color.fromARGB(255, 36, 139, 55),
           ),
         ),
-        backgroundColor: Colors.green.shade700,
       ),
+
       body: Padding(
         padding: const EdgeInsets.all(24.0),
         child: Form(

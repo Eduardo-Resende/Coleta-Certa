@@ -20,20 +20,23 @@ class ConfigNavegator extends StatelessWidget {
         decoration: const BoxDecoration(
           border: Border(bottom: BorderSide(color: Colors.grey, width: 1)),
         ),
-        height: 80,
+        height: 60,
+        child: Padding(
+        padding: const EdgeInsets.all(10.0),
         child: Row(
           children: [
-            Icon(icon, color: Colors.green, size: 70),
-            Expanded(
-              child: Center(
-                child: Text(
-                  text,
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+            Icon(icon, color: Colors.green, size: 40),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                text,
+                style: const TextStyle(
+                  fontSize: 20,
                 ),
               ),
             ),
-            Icon(Icons.arrow_forward, color: Colors.grey, size: 70),
-          ],
+            ],
+          ),
         ),
       ),
     );

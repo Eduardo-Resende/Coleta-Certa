@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:coleta_certa/ui/about_the_app_screen.dart';
 import 'package:coleta_certa/ui/user_settings_screen.dart';
 import 'package:coleta_certa/ux/app_theme.dart';
+import 'package:coleta_certa/ux/cep.dart';
 import 'package:coleta_certa/ux/config_item.dart';
 import 'package:coleta_certa/ux/config_navegator.dart';
 import 'package:coleta_certa/ux/floating_navigation_bar.dart';
@@ -10,6 +11,7 @@ import 'package:coleta_certa/ux/navigate_screen.dart';
 import 'package:coleta_certa/ux/show_profile_photo_dialog.dart';
 import 'package:coleta_certa/ux/user.dart';
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:provider/provider.dart';
 
 class ConfigScreen extends StatelessWidget {
@@ -83,19 +85,101 @@ class ConfigScreen extends StatelessWidget {
                           style: TextStyle(
                             fontFamily: 'Open Sans',
                             fontSize: 20,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 10),
                       ],
                     ),
                   ),
                 ],
               ),
-              Expanded (
+              Expanded(
                 child: ListView(
                   children: [
                     const SizedBox(height: 20),
-                
+
+                    ConfigItem(
+                      icon: Icons.notifications_outlined,
+                      text: 'Ativar Notificações',
+                      onToggle: (_) {},
+                    ),
+
+                    ConfigItem(
+                      icon: Icons.dark_mode_outlined,
+                      text: "Ativar Modo Escuro",
+                      onToggle: (isOn) {
+                        themeProvider.toggleTheme(isOn);
+                      },
+                    ),
+
+                    ConfigItem(
+                      icon: Icons.location_on_outlined,
+                      text: 'Ativar Localização',
+                      onToggle: (isOn) async {
+                        final userProvider = Provider.of<UserProvider>(
+                          context,
+                          listen: false,
+                        );
+                        final user = userProvider.usuario;
+
+                        if (isOn) {
+                          // Ativa e começa a puxar localização em tempo real
+                          bool serviceEnabled =
+                              await Geolocator.isLocationServiceEnabled();
+                          if (!serviceEnabled) {
+                            await Geolocator.openLocationSettings();
+                            return;
+                          }
+
+                          LocationPermission permission =
+                              await Geolocator.checkPermission();
+                          if (permission == LocationPermission.denied) {
+                            permission = await Geolocator.requestPermission();
+                            if (permission ==
+                                    LocationPermission.deniedForever ||
+                                permission == LocationPermission.denied) {
+                              return;
+                            }
+                          }
+
+                          Geolocator.getPositionStream().listen((
+                            Position position,
+                          ) {
+                            if (user != null) {
+                              userProvider.setUsuario(
+                                User(
+                                  name: user.name,
+                                  cep: user.cep,
+                                  bairro: user.bairro,
+                                  latitude: position.latitude,
+                                  longitude: position.longitude,
+                                  photoPath: user.photoPath,
+                                ),
+                              );
+                            }
+                          });
+                        } else {
+                          // Desativa localização em tempo real e restaura localização via CEP
+                          if (user != null) {
+                            final cepService = Cep();
+                            final data = await cepService.validaCep(user.cep);
+                            if (data != null) {
+                              userProvider.setUsuario(
+                                User(
+                                  name: user.name,
+                                  cep: user.cep,
+                                  bairro: data['bairro'],
+                                  latitude: data['latitude'],
+                                  longitude: data['longitude'],
+                                  photoPath: user.photoPath,
+                                ),
+                              );
+                            }
+                          }
+                        }
+                      },
+                    ),
+
                     ConfigNavegator(
                       icon: Icons.edit_outlined,
                       text: "Editar Perfil",
@@ -105,31 +189,30 @@ class ConfigScreen extends StatelessWidget {
                             UserSettingsScreen(),
                           ),
                     ),
-                    ConfigItem(
-                      icon: Icons.location_on_outlined,
-                      text: 'Localização',
-                      onToggle: (_) {},
-                    ),
-                    ConfigItem(
-                      icon: Icons.notifications_outlined,
-                      text: 'Notificações',
-                      onToggle: (_) {},
-                    ),
-                    ConfigItem(
-                      icon: Icons.dark_mode_outlined,
-                      text: "Modo Escuro",
-                      onToggle: (isOn) {
-                        themeProvider.toggleTheme(isOn);
-                      },
-                    ),
-                    ConfigNavegator(
-                      icon: Icons.smartphone,
-                      text: "Sobre o App",
-                      onTap:
-                          () => NavigateScreen.changeScreen(
-                            context,
-                            AboutTheAppScreen(),
+                    Align(
+                      alignment:
+                          Alignment.center,
+                      child: Material(
+                        color: Colors.transparent, // sem fundo
+                        child: InkWell(
+                          onTap:
+                              () => NavigateScreen.changeScreen(
+                                context,
+                                AboutTheAppScreen(),
+                              ),
+                          child: Padding(
+                            padding: EdgeInsets.all(10.0),
+                            child: Text(
+                              'Sobre o APP',
+                              style: TextStyle(
+                                color: Colors.green,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
+                        ),
+                      ),
                     ),
                   ],
                 ),
