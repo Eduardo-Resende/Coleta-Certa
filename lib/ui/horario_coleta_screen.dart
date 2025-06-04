@@ -296,7 +296,7 @@ class _HorarioColetaScreenState extends State<HorarioColetaScreen> {
             title: Row(
               children: [
                 Text(
-                  'Horário Coleta',
+                  'Horário de Coleta',
                   style: TextStyle(
                     color: Colors.white,
                     fontFamily: 'nunito',
@@ -304,7 +304,6 @@ class _HorarioColetaScreenState extends State<HorarioColetaScreen> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Icon(Icons.timer_outlined, color: Colors.white, size: 30),
               ],
             ),
           ),
