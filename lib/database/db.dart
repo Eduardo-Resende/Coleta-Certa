@@ -35,6 +35,7 @@ class DB {
     await db.execute(_empresaColeta);
     await db.execute(_tipoColeta);
     await db.execute(_horarioColeta);
+    await db.execute(_locaisFavoritos);
     await _insertsIniciais(db);
   }
 
@@ -117,6 +118,17 @@ class DB {
       FOREIGN KEY (idTipoColeta) REFERENCES tipo_coleta(idTipoColeta),
       FOREIGN KEY (idBairro) REFERENCES bairro(idBairro),
       FOREIGN KEY (idDia) REFERENCES dia_semana(idDia)
+    );
+  ''';
+
+  String get _locaisFavoritos => '''
+    CREATE TABLE locais_favoritos (
+      idFavorito   INTEGER PRIMARY KEY AUTOINCREMENT,
+      titulo       TEXT NOT NULL,
+      icone        TEXT NOT NULL,
+      cep          TEXT,
+      idBairro     INTEGER NOT NULL,
+      FOREIGN KEY (idBairro) REFERENCES bairro(idBairro)
     );
   ''';
 

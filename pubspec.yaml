@@ -38,6 +38,8 @@ flutter:
     - .env
     - lib/assets/data/
     - lib/assets/html/
+    - lib/assets/faq/data/
+    - lib/assets/faq/html/
     - README.md
 
 flutter_icons:

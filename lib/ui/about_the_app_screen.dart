@@ -40,7 +40,7 @@ class _AboutTheAppScreenState extends State<AboutTheAppScreen> {
             shadowColor: Colors.black,
             elevation: 10,
             leading: IconButton(
-              icon: Icon(Icons.arrow_back, color: Colors.white, size: 40),
+              icon: Icon(Icons.arrow_back, color: Colors.white, size: 30),
               onPressed: () => Navigator.pop(context),
             ),
             title: Text(
@@ -48,7 +48,7 @@ class _AboutTheAppScreenState extends State<AboutTheAppScreen> {
               style: TextStyle(
                 color: Colors.white,
                 fontFamily: 'nunito',
-                fontSize: 30,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),

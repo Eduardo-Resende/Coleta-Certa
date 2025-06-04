@@ -1,0 +1,62 @@
+[
+  {
+    "titulo": "Como o app surgiu?",
+    "htmlFilePath": "lib/assets/faq/html/como_o_app_surgiu.html"
+  },
+  {
+    "titulo": "Como faço para consultar os horários de coleta no meu CEP ou bairro?",
+    "htmlFilePath": "lib/assets/faq/html/como_consultar_horarios.html"
+  },
+  {
+    "titulo": "O que significa “turno” de coleta? Como sei se é manhã, tarde ou noite?",
+    "htmlFilePath": "lib/assets/faq/html/o_que_significa_turno_de_coleta.html"
+  },
+  {
+    "titulo": "Como cadastrar e gerenciar meus endereços favoritos?",
+    "htmlFilePath": "lib/assets/faq/html/como_cadastrar_enderecos_favoritos.html"
+  },
+  {
+    "titulo": "Posso acompanhar a coleta de lixo em mais de um local (por exemplo, casa e trabalho)?",
+    "htmlFilePath": "lib/assets/faq/html/acompanhar_coleta_em_mais_de_um_local.html"
+  },
+  {
+    "titulo": "Como recebo notificações sobre mudanças no cronograma de coleta?",
+    "htmlFilePath": "lib/assets/faq/html/como_receber_notificacoes.html"
+  },
+  {
+    "titulo": "Onde encontro dicas sobre descarte correto de resíduos no app?",
+    "htmlFilePath": "lib/assets/faq/html/dicas_descarte_correto.html"
+  },
+  {
+    "titulo": "Como funcionam os Pontos de Descarte? Consigo ver no mapa onde descartar itens recicláveis ou especiais?",
+    "htmlFilePath": "lib/assets/faq/html/como_funcionam_pontos_de_descarte.html"
+  },
+  {
+    "titulo": "Quais tipos de resíduos têm orientações específicas no ColetaCerta?",
+    "htmlFilePath": "lib/assets/faq/html/tipos_de_residuos_orientacoes.html"
+  },
+  {
+    "titulo": "O que são as Dicas de Reutilização e como posso acessá-las?",
+    "htmlFilePath": "lib/assets/faq/html/o_que_sao_dicas_de_reutilizacao.html"
+  },
+  {
+    "titulo": "Como faço para reportar um erro ou sugestão diretamente à prefeitura?",
+    "htmlFilePath": "lib/assets/faq/html/como_reportar_erro_sugestao.html"
+  },
+  {
+    "titulo": "O aplicativo funciona sem internet?",
+    "htmlFilePath": "lib/assets/faq/html/aplicativo_funciona_sem_internet.html"
+  },
+  {
+    "titulo": "Como garantir que meu CEP ou endereço esteja cadastrado corretamente?",
+    "htmlFilePath": "lib/assets/faq/html/como_garantir_cep_cadastrado.html"
+  },
+  {
+    "titulo": "O app é compatível com qualquer versão do Android e iOS?",
+    "htmlFilePath": "lib/assets/faq/html/compatibilidade_android_ios.html"
+  },
+  {
+    "titulo": "Quais dados pessoais o ColetaCerta armazena e como eles são protegidos?",
+    "htmlFilePath": "lib/assets/faq/html/dados_pessoais_protecao.html"
+  }
+]
