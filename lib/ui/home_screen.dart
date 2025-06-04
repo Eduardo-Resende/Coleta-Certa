@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   style: TextStyle(
                     color: Colors.white,
                     fontFamily: 'nunito',
-                    fontSize: 30,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

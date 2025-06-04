@@ -290,17 +290,22 @@ class _HorarioColetaScreenState extends State<HorarioColetaScreen> {
             shadowColor: Colors.black,
             elevation: 10,
             leading: IconButton(
-              icon: Icon(Icons.arrow_back, color: Colors.white, size: 40),
+              icon: Icon(Icons.arrow_back, color: Colors.white, size: 30),
               onPressed: () => Navigator.pop(context),
             ),
-            title: Text(
-              'Horário da Coleta',
-              style: TextStyle(
-                color: Colors.white,
-                fontFamily: 'nunito',
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-              ),
+            title: Row(
+              children: [
+                Text(
+                  'Horário Coleta',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'nunito',
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Icon(Icons.timer_outlined, color: Colors.white, size: 30),
+              ],
             ),
           ),
         ),

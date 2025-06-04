@@ -31,7 +31,7 @@ class ConfigScreen extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: const Color.fromARGB(255, 36, 139, 55),
             leading: IconButton(
-              icon: Icon(Icons.arrow_back, color: Colors.white, size: 40),
+              icon: Icon(Icons.arrow_back, color: Colors.white, size: 30),
               onPressed: () => Navigator.pop(context),
             ),
           ),

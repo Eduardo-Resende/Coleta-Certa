@@ -19,7 +19,7 @@ class LixoReciclavelScreen extends StatelessWidget {
             shadowColor: Colors.black,
             elevation: 10,
             leading: IconButton(
-              icon: Icon(Icons.arrow_back, color: Colors.white, size: 40),
+              icon: Icon(Icons.arrow_back, color: Colors.white, size: 30),
               onPressed: () => Navigator.pop(context),
             ),
             title: Column(
