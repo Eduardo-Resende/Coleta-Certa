@@ -1,6 +1,7 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:coleta_certa/ui/home_screen.dart';
+import 'package:coleta_certa/ux/cep_formater.dart';
 import 'package:coleta_certa/ux/navigate_screen.dart';
 import 'package:coleta_certa/ux/user.dart';
 import 'package:coleta_certa/ux/cep.dart';
@@ -34,8 +35,29 @@ class _UserRequestState extends State<UserRequest> {
                 Image.asset('lib/assets/img/coleta_certa_sem_fundo.png'),
                 TextFormField(
                   maxLength: 15,
-                  decoration: InputDecoration(label: Text("Nome")),
                   controller: nameController,
+                  decoration: InputDecoration(
+                    labelText: "Nome",
+                    filled: true,
+                    fillColor: Colors.grey[100],
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide: BorderSide(
+                        color: Color.fromARGB(255, 36, 139, 55),
+                        width: 2,
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide: BorderSide(
+                        color: Colors.grey.shade400,
+                        width: 1,
+                      ),
+                    ),
+                  ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return 'Preencha o nome';
@@ -43,25 +65,56 @@ class _UserRequestState extends State<UserRequest> {
                     return null;
                   },
                 ),
-                TextFormField(
-                  decoration: InputDecoration(label: Text("CEP")),
-                  controller: cepController,
-                  keyboardType: TextInputType.number,
-                  validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Preencha o CEP';
-                    } else if (!RegExp(r'^\d{8}$').hasMatch(value)) {
-                      return 'CEP precisa ter 8 caracteres';
-                    }
-                    return null;
-                  },
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+                  child: TextFormField(
+                    maxLength: 9,
+                    controller: cepController,
+                    keyboardType: TextInputType.number,
+                    inputFormatters: [CepInputFormatter()],
+                    decoration: InputDecoration(
+                      labelText: "CEP",
+                      filled: true,
+                      fillColor: Colors.grey[100],
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(15),
+                        borderSide: BorderSide(
+                          color: const Color.fromARGB(255, 36, 139, 55),
+                          width: 2,
+                        ),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(15),
+                        borderSide: BorderSide(
+                          color: Colors.grey.shade400,
+                          width: 1,
+                        ),
+                      ),
+                    ),
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'Preencha o CEP';
+                      } else if (!RegExp(r'^\d{5}-\d{3}$').hasMatch(value)) {
+                        return 'Formato esperado: 00000-000';
+                      }
+                      return null;
+                    },
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey[200],
+                      backgroundColor: Colors.grey[100],
                       foregroundColor: const Color.fromARGB(255, 36, 139, 55),
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                        side: BorderSide(color: Colors.grey.shade400, width: 1),
+                      ),
                     ),
                     onPressed: () async {
                       if (formKey.currentState!.validate()) {
@@ -72,7 +125,7 @@ class _UserRequestState extends State<UserRequest> {
                         if (result == null) {
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
-                              content: Text('CEP não encontrado'),
+                              content: Text('CEP inválido ou não encontrado'),
                               backgroundColor: Colors.red,
                             ),
                           );

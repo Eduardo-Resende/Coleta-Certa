@@ -4,7 +4,7 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.7.2
+  sdk: ">=3.1.0 <4.0.0"
 
 dependencies:
   flutter:
@@ -24,6 +24,9 @@ dependencies:
   flutter_markdown: ^0.6.18
   geolocator: ^11.0.0
   cupertino_icons: ^1.0.8
+  flutter_local_notifications: ^19.2.1
+  timezone: ^0.10.0
+  permission_handler: ^11.3.0
 
 dev_dependencies:
   flutter_test:

@@ -2,12 +2,16 @@
 
 import 'dart:io';
 
+import 'package:coleta_certa/ux/Util.dart';
 import 'package:coleta_certa/ux/cep.dart';
+import 'package:coleta_certa/ux/cep_formater.dart';
 import 'package:coleta_certa/ux/image_crop.dart';
+import 'package:coleta_certa/ux/notificacoes.dart';
 import 'package:coleta_certa/ux/user.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
+import 'package:timezone/timezone.dart' as tz;
 
 class UserSettingsScreen extends StatefulWidget {
   const UserSettingsScreen({super.key});
@@ -62,7 +66,6 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
   Future<void> _saveUserChanges() async {
     if (_formKey.currentState!.validate()) {
       final result = await _cepValidator.validaCep(_cepController.text);
-
       if (result == null) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
@@ -73,6 +76,7 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
         return;
       }
 
+      // 1) Cria o novo User com bairro atualizado
       final updatedUser = User(
         name: _nameController.text,
         cep: _cepController.text,
@@ -83,11 +87,87 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
       );
 
       final userProvider = Provider.of<UserProvider>(context, listen: false);
+
+      // 2) Atualiza o provider e SharedPreferences
       userProvider.setUsuario(updatedUser);
       await userProvider.saveUser(updatedUser);
 
+      // 3) Cancela todas as notificações agendadas para o bairro antigo
+      await NotificationService.instance.cancelAllNotifications();
+
+      // 4) Re-agenda notificações para o bairro novo
+      final horarios =
+          await NotificationService.getHorariosPorBairro(updatedUser.bairro!);
+      for (var h in horarios) {
+        // converte “08:00” ou “12:00” em ints
+        final partes = h.horario.split(':');
+        final horaColeta = int.parse(partes[0]);
+        final minutoColeta = int.parse(partes[1]);
+
+        // calcula próxima data daquele dia da semana
+        final agora = tz.TZDateTime.now(tz.local);
+        final diaSemanaNum = Util.mapDiaParaWeekday(h.diaDaSemana);
+        int diasAte = (diaSemanaNum - agora.weekday + 7) % 7;
+        if (diasAte == 0) diasAte = 7; // próxima semana
+        final dataColeta = agora.add(Duration(days: diasAte));
+
+        // 4a) notificação 18h do dia anterior
+        final diaAnterior = dataColeta.subtract(const Duration(days: 1));
+        final aviso1 = tz.TZDateTime(
+          tz.local,
+          diaAnterior.year,
+          diaAnterior.month,
+          diaAnterior.day,
+          18, // hora
+          0, // minuto
+        );
+        await NotificationService.instance.scheduleNotification(
+          id: h.idHorario * 10 + 1,
+          title: 'Coleta Amanhã',
+          body: 'Amanhã tem coleta no seu bairro às ${h.horario}',
+          scheduledDate: aviso1,
+        );
+
+        // 4b) notificação 08h do dia da coleta
+        final aviso2 = tz.TZDateTime(
+          tz.local,
+          dataColeta.year,
+          dataColeta.month,
+          dataColeta.day,
+          8, // hora
+          0, // minuto
+        );
+        await NotificationService.instance.scheduleNotification(
+          id: h.idHorario * 10 + 2,
+          title: 'Coleta Hoje',
+          body: 'Coleta matutina hoje às 08:00',
+          scheduledDate: aviso2,
+        );
+
+        // 4c) se vespertino, notificação 12h do dia da coleta
+        if (h.tipoColeta.toLowerCase() == 'vespertino') {
+          final aviso3 = tz.TZDateTime(
+            tz.local,
+            dataColeta.year,
+            dataColeta.month,
+            dataColeta.day,
+            12, // hora
+            0, // minuto
+          );
+          await NotificationService.instance.scheduleNotification(
+            id: h.idHorario * 10 + 3,
+            title: 'Coleta Hoje',
+            body: 'Coleta vespertina hoje às 12:00',
+            scheduledDate: aviso3,
+          );
+        }
+      }
+
+      // 5) Feedback ao usuário
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Informações atualizadas com sucesso')),
+        const SnackBar(
+            content:
+                Text('Informações e notificações atualizadas com sucesso')),
       );
     }
   }
@@ -120,7 +200,6 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
           ),
         ),
       ),
-
       body: Padding(
         padding: const EdgeInsets.all(24.0),
         child: Form(
@@ -135,19 +214,17 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
                       onTap: _pickImage,
                       child: CircleAvatar(
                         radius: 60,
-                        backgroundColor: Colors.green.shade700,
-                        backgroundImage:
-                            _photoPath != null
-                                ? FileImage(File(_photoPath!))
-                                : null,
-                        child:
-                            _photoPath == null
-                                ? const Icon(
-                                  Icons.person,
-                                  size: 60,
-                                  color: Colors.white,
-                                )
-                                : null,
+                        backgroundColor: const Color.fromARGB(255, 36, 139, 55),
+                        backgroundImage: _photoPath != null
+                            ? FileImage(File(_photoPath!))
+                            : null,
+                        child: _photoPath == null
+                            ? const Icon(
+                                Icons.person,
+                                size: 60,
+                                color: Colors.white,
+                              )
+                            : null,
                       ),
                     ),
                     IconButton(
@@ -165,22 +242,62 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
               TextFormField(
                 controller: _nameController,
                 maxLength: 15,
-                decoration: const InputDecoration(labelText: 'Nome'),
-                validator:
-                    (value) =>
-                        value == null || value.isEmpty
-                            ? 'Informe seu nome'
-                            : null,
+                decoration: InputDecoration(
+                  labelText: "Nome",
+                  filled: true,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                    borderSide: BorderSide(
+                      color: Color.fromARGB(255, 36, 139, 55),
+                      width: 2,
+                    ),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                    borderSide: BorderSide(
+                      color: Colors.grey.shade400,
+                      width: 1,
+                    ),
+                  ),
+                ),
+                validator: (value) =>
+                    value == null || value.isEmpty ? 'Informe seu nome' : null,
               ),
               const SizedBox(height: 16),
               TextFormField(
+                maxLength: 9,
                 controller: _cepController,
-                decoration: const InputDecoration(labelText: 'CEP'),
                 keyboardType: TextInputType.number,
+                inputFormatters: [CepInputFormatter()],
+                decoration: InputDecoration(
+                  labelText: "CEP",
+                  filled: true,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                    borderSide: BorderSide(
+                      color: const Color.fromARGB(255, 36, 139, 55),
+                      width: 2,
+                    ),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                    borderSide: BorderSide(
+                      color: Colors.grey.shade400,
+                      width: 1,
+                    ),
+                  ),
+                ),
                 validator: (value) {
-                  if (value == null || value.isEmpty) return 'Informe o CEP';
-                  if (!RegExp(r'^\d{8}$').hasMatch(value)) {
-                    return 'CEP precisa ter 8 dígitos';
+                  if (value == null || value.isEmpty) {
+                    return 'Preencha o CEP';
+                  } else if (!RegExp(r'^\d{5}-\d{3}$').hasMatch(value)) {
+                    return 'Formato esperado: 00000-000';
                   }
                   return null;
                 },
@@ -193,7 +310,7 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
                   style: TextStyle(color: Colors.white),
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green.shade700,
+                  backgroundColor: const Color.fromARGB(255, 36, 139, 55),
                   padding: const EdgeInsets.symmetric(vertical: 12),
                 ),
                 onPressed: _saveUserChanges,

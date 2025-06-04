@@ -1,5 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
+import 'package:coleta_certa/ux/Util.dart';
 import 'package:coleta_certa/ux/user.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -44,7 +45,7 @@ class _MapScreenState extends State<MapScreen> {
         infoWindow: InfoWindow(
           title: nome,
           snippet: endereco,
-          onTap: () => _abrirNoGoogleMaps(lat, lng),
+          onTap: () => Util.abrirNoGoogleMaps(context, lat, lng),
         ),
       );
     }).toSet();
@@ -52,17 +53,6 @@ class _MapScreenState extends State<MapScreen> {
     setState(() {
       _markers.addAll(marcadores);
     });
-  }
-
-  void _abrirNoGoogleMaps(double lat, double lng) async {
-    final url = Uri.parse('https://www.google.com/maps/dir/?api=1&destination=$lat,$lng&travelmode=driving');
-    if (await canLaunchUrl(url)) {
-      await launchUrl(url, mode: LaunchMode.externalApplication);
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Não foi possível abrir o Google Maps.')),
-      );
-    }
   }
 
   @override
