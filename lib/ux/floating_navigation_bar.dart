@@ -10,11 +10,11 @@ class FloatingNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      left: 90,
-      right: 90,
+      left: 140,
+      right: 140,
       bottom: 30,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 0),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 0),
         decoration: BoxDecoration(
           color: Colors.grey[200],
           borderRadius: BorderRadius.circular(40),
@@ -45,22 +45,22 @@ class FloatingNavigationBar extends StatelessWidget {
                 size: 25,
               ),
             ),
-            IconButton(
-              onPressed: () {
-                if (ModalRoute.of(context)?.settings.name != '/debug') {
-                  NavigateScreen.changeScreen(
-                    context,
-                    DebugDataScreen(),
-                    routeName: '/debug',
-                  );
-                }
-              },
-              icon: Icon(
-                Icons.delete_outline,
-                color: const Color.fromARGB(255, 36, 139, 55),
-                size: 25,
-              ),
-            ),
+            // IconButton(
+            //   onPressed: () {
+            //     if (ModalRoute.of(context)?.settings.name != '/debug') {
+            //       NavigateScreen.changeScreen(
+            //         context,
+            //         DebugDataScreen(),
+            //         routeName: '/debug',
+            //       );
+            //     }
+            //   },
+            //   icon: Icon(
+            //     Icons.delete_outline,
+            //     color: const Color.fromARGB(255, 36, 139, 55),
+            //     size: 25,
+            //   ),
+            // ),
             IconButton(
               onPressed: () {
                 if (ModalRoute.of(context)?.settings.name != '/config') {

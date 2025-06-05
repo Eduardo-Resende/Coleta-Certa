@@ -99,12 +99,37 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
       final horarios =
           await NotificationService.getHorariosPorBairro(updatedUser.bairro!);
       for (var h in horarios) {
-        // converte “08:00” ou “12:00” em ints
-        final partes = h.horario.split(':');
-        final horaColeta = int.parse(partes[0]);
-        final minutoColeta = int.parse(partes[1]);
+        final horarioStr = h.horario.trim().toLowerCase();
 
-        // calcula próxima data daquele dia da semana
+        // Se for "diurno" => 08:00, se for "noturno" => 18:00
+        int? horaColeta;
+        int minutoColeta = 0;
+
+        if (horarioStr == 'Diurno') {
+          horaColeta = 8;
+        } else if (horarioStr == 'Noturno') {
+          horaColeta = 18;
+        } else if (horarioStr.contains(':')) {
+          // Caso você queira ainda aceitar "HH:mm" para outros cenários
+          final partes = horarioStr.split(':');
+          if (partes.length != 2) {
+            debugPrint('Horário mal-formatado: "$horarioStr"');
+            continue;
+          }
+          final hInt = int.tryParse(partes[0]);
+          final mInt = int.tryParse(partes[1]);
+          if (hInt == null || mInt == null) {
+            debugPrint('Não foi possível converter horário: "$horarioStr"');
+            continue;
+          }
+          horaColeta = hInt;
+          minutoColeta = mInt;
+        } else {
+          debugPrint('Horário inválido recebido: "$horarioStr"');
+          continue;
+        }
+
+        // Calcula a próxima data de coleta baseada no dia da semana
         final agora = tz.TZDateTime.now(tz.local);
         final diaSemanaNum = Util.mapDiaParaWeekday(h.diaDaSemana);
         int diasAte = (diaSemanaNum - agora.weekday + 7) % 7;
@@ -118,46 +143,48 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
           diaAnterior.year,
           diaAnterior.month,
           diaAnterior.day,
-          18, // hora
+          18, // hora fixa 18:00 do dia anterior
           0, // minuto
         );
         await NotificationService.instance.scheduleNotification(
           id: h.idHorario * 10 + 1,
           title: 'Coleta Amanhã',
-          body: 'Amanhã tem coleta no seu bairro às ${h.horario}',
+          body: 'Amanhã tem coleta no seu bairro às ${_formatHorarioExibicao(h.horario)}',
           scheduledDate: aviso1,
         );
 
-        // 4b) notificação 08h do dia da coleta
+        // 4b) notificação no horário exato do dia da coleta
         final aviso2 = tz.TZDateTime(
           tz.local,
           dataColeta.year,
           dataColeta.month,
           dataColeta.day,
-          8, // hora
-          0, // minuto
+          horaColeta, // hora definida
+          minutoColeta, // minuto definido
         );
         await NotificationService.instance.scheduleNotification(
           id: h.idHorario * 10 + 2,
           title: 'Coleta Hoje',
-          body: 'Coleta matutina hoje às 08:00',
+          body: 'Coleta hoje às ${_formatHorarioExibicao(h.horario)}',
           scheduledDate: aviso2,
         );
 
-        // 4c) se vespertino, notificação 12h do dia da coleta
-        if (h.tipoColeta.toLowerCase() == 'vespertino') {
+        // 4c) se for coleta vespertina (noturno), agenda um lembrete ao meio-dia
+        //    ou se você quiser manter lógica diferente para "vespertino" vs. "noturno",
+        //    ajuste o if abaixo de acordo. 
+        if (horarioStr == 'noturno' || h.tipoColeta.toLowerCase() == 'vespertino') {
           final aviso3 = tz.TZDateTime(
             tz.local,
             dataColeta.year,
             dataColeta.month,
             dataColeta.day,
-            12, // hora
+            12, // hora fixa 12:00
             0, // minuto
           );
           await NotificationService.instance.scheduleNotification(
             id: h.idHorario * 10 + 3,
             title: 'Coleta Hoje',
-            body: 'Coleta vespertina hoje às 12:00',
+            body: 'Coleta vespertina hoje às ${_formatHorarioExibicao(h.horario)}',
             scheduledDate: aviso3,
           );
         }
@@ -166,10 +193,19 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
       // 5) Feedback ao usuário
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-            content:
-                Text('Informações e notificações atualizadas com sucesso')),
+          content: Text('Informações e notificações atualizadas com sucesso'),
+        ),
       );
     }
+  }
+
+  /// Formata a string de exibição do horário: "Diurno" mostrará "08:00",
+  /// e "Noturno" mostrará "18:00" para o usuário. Se vier "HH:mm", exibe como está.
+  String _formatHorarioExibicao(String horarioOriginal) {
+    final s = horarioOriginal.trim().toLowerCase();
+    if (s == 'diurno') return '08:00';
+    if (s == 'noturno') return '18:00';
+    return horarioOriginal;
   }
 
   @override
@@ -178,13 +214,13 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(kToolbarHeight),
         child: ClipRRect(
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             bottomLeft: Radius.circular(20),
             bottomRight: Radius.circular(20),
           ),
           child: AppBar(
             leading: IconButton(
-              icon: Icon(Icons.arrow_back, color: Colors.white, size: 40),
+              icon: const Icon(Icons.arrow_back, color: Colors.white, size: 40),
               onPressed: () => Navigator.pop(context),
             ),
             title: const Text(
@@ -215,9 +251,8 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
                       child: CircleAvatar(
                         radius: 60,
                         backgroundColor: const Color.fromARGB(255, 36, 139, 55),
-                        backgroundImage: _photoPath != null
-                            ? FileImage(File(_photoPath!))
-                            : null,
+                        backgroundImage:
+                            _photoPath != null ? FileImage(File(_photoPath!)) : null,
                         child: _photoPath == null
                             ? const Icon(
                                 Icons.person,
@@ -250,7 +285,7 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Color.fromARGB(255, 36, 139, 55),
                       width: 2,
                     ),
@@ -280,8 +315,8 @@ class _UserSettingsScreenState extends State<UserSettingsScreen> {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
-                    borderSide: BorderSide(
-                      color: const Color.fromARGB(255, 36, 139, 55),
+                    borderSide: const BorderSide(
+                      color: Color.fromARGB(255, 36, 139, 55),
                       width: 2,
                     ),
                   ),

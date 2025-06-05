@@ -31,7 +31,7 @@ class ConfigScreen extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: const Color.fromARGB(255, 36, 139, 55),
             leading: IconButton(
-              icon: Icon(Icons.arrow_back, color: Colors.white, size: 30),
+              icon: const Icon(Icons.arrow_back, color: Colors.white, size: 30),
               onPressed: () => Navigator.pop(context),
             ),
           ),
@@ -40,7 +40,7 @@ class ConfigScreen extends StatelessWidget {
               Stack(
                 children: [
                   Container(
-                    width: MediaQuery.of(context).size.width,
+                    width: width,
                     height: 90,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(
@@ -49,12 +49,7 @@ class ConfigScreen extends StatelessWidget {
                       ),
                       color: const Color.fromARGB(255, 36, 139, 55),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 20,
-                        vertical: 0,
-                      ),
-                    ),
+                    child: const SizedBox(),
                   ),
                   Center(
                     child: Column(
@@ -82,7 +77,7 @@ class ConfigScreen extends StatelessWidget {
                         ),
                         Text(
                           user!.name,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontFamily: 'Open Sans',
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
@@ -107,22 +102,76 @@ class ConfigScreen extends StatelessWidget {
                         if (user == null || user.bairro == null) return;
 
                         if (isOn) {
-                          // 1) Pede permissão
-                          final granted = await NotificationService.instance
+                          // 1) Tentar pedir permissão e, se negado, oferecer opção para tentar de novo
+                          bool? granted = await NotificationService.instance
                               .requestPermission();
-                          if (granted != true) return;
 
-                          // 2) Busca os horários para o bairro do usuário
+                          // Enquanto o usuário negar, perguntar se quer tentar novamente
+                          while (granted != true) {
+                            final retry = await showDialog<bool>(
+                              context: context,
+                              builder: (ctx) => AlertDialog(
+                                title: const Text('Permissão de Notificações'),
+                                content: const Text(
+                                  'Você negou a permissão de notificações. '
+                                  'Para receber alertas de coleta, precisamos dessa permissão. '
+                                  'Deseja tentar novamente?',
+                                ),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () => Navigator.of(ctx).pop(false),
+                                    child: const Text('Cancelar'),
+                                  ),
+                                  TextButton(
+                                    onPressed: () => Navigator.of(ctx).pop(true),
+                                    child: const Text('Tentar Novamente'),
+                                  ),
+                                ],
+                              ),
+                            );
+
+                            // Se o usuário escolher cancelar, sai do loop
+                            if (retry != true) return;
+
+                            // Tentar pedir permissão outra vez
+                            granted = await NotificationService.instance
+                                .requestPermission();
+                          }
+
+                          // 2) Agora que está garantido que granted == true, busca os horários
                           final horarios =
                               await NotificationService.getHorariosPorBairro(
                                   user.bairro!);
 
-                          // 3) Para cada horário, calcula e agenda as 3 notificações
+                          // 3) Para cada horário, calcula e agenda as notificações
                           for (var h in horarios) {
-                            // converte “08:00” ou “12:00” em ints
-                            final partes = h.horario.split(':');
-                            final hora = int.parse(partes[0]);
-                            final minuto = int.parse(partes[1]);
+                            final horarioStr = h.horario.trim().toLowerCase();
+                            int? horaColeta;
+                            int minutoColeta = 0;
+
+                            if (horarioStr == 'diurno') {
+                              horaColeta = 8;
+                            } else if (horarioStr == 'noturno') {
+                              horaColeta = 18;
+                            } else if (horarioStr.contains(':')) {
+                              final partes = horarioStr.split(':');
+                              if (partes.length != 2) {
+                                debugPrint('Horário mal-formatado: "$horarioStr"');
+                                continue;
+                              }
+                              final hInt = int.tryParse(partes[0]);
+                              final mInt = int.tryParse(partes[1]);
+                              if (hInt == null || mInt == null) {
+                                debugPrint(
+                                    'Não foi possível converter horário: "$horarioStr"');
+                                continue;
+                              }
+                              horaColeta = hInt;
+                              minutoColeta = mInt;
+                            } else {
+                              debugPrint('Horário inválido recebido: "$horarioStr"');
+                              continue;
+                            }
 
                             // Próxima data daquele dia da semana
                             DateTime agora = DateTime.now();
@@ -130,49 +179,67 @@ class ConfigScreen extends StatelessWidget {
                                 Util.mapDiaParaWeekday(h.diaDaSemana);
                             int diasAte =
                                 (diaSemanaNum - agora.weekday + 7) % 7;
-                            if (diasAte == 0) diasAte = 7; // próxima semana
+                            if (diasAte == 0) diasAte = 7;
 
                             DateTime dataColeta =
                                 agora.add(Duration(days: diasAte));
 
                             // 18h do dia anterior
-                            DateTime aviso1 = DateTime(dataColeta.year,
-                                dataColeta.month, dataColeta.day - 1, 18, 0);
-                            await NotificationService.instance
-                                .scheduleNotification(
+                            DateTime diaAnterior =
+                                dataColeta.subtract(const Duration(days: 1));
+                            DateTime aviso1 = DateTime(
+                              diaAnterior.year,
+                              diaAnterior.month,
+                              diaAnterior.day,
+                              18,
+                              0,
+                            );
+                            await NotificationService.instance.scheduleNotification(
                               id: h.idHorario * 10 + 1,
                               title: 'Coleta Amanhã',
                               body:
-                                  'Amanhã tem coleta no seu bairro às ${h.horario}',
+                                  'Amanhã tem coleta no seu bairro às ${_formatHorarioExibicao(h.horario)}',
                               scheduledDate: aviso1,
                             );
 
-                            // 08h do dia
-                            DateTime aviso2 = DateTime(dataColeta.year,
-                                dataColeta.month, dataColeta.day, 8, 0);
-                            await NotificationService.instance
-                                .scheduleNotification(
+                            // Notificação no horário exato do dia da coleta
+                            DateTime aviso2 = DateTime(
+                              dataColeta.year,
+                              dataColeta.month,
+                              dataColeta.day,
+                              horaColeta!,
+                              minutoColeta,
+                            );
+                            await NotificationService.instance.scheduleNotification(
                               id: h.idHorario * 10 + 2,
                               title: 'Coleta Hoje',
-                              body: 'Coleta matutina hoje às 08:00',
+                              body:
+                                  'Coleta hoje às ${_formatHorarioExibicao(h.horario)}',
                               scheduledDate: aviso2,
                             );
 
-                            // Se vespertino, agenda 12h
-                            if (h.tipoColeta.toLowerCase() == 'vespertino') {
-                              DateTime aviso3 = DateTime(dataColeta.year,
-                                  dataColeta.month, dataColeta.day, 12, 0);
+                            // Se for “noturno” ou tipoColeta == “vespertino”, agenda lembrete ao meio-dia
+                            if (horarioStr == 'noturno' ||
+                                h.tipoColeta.toLowerCase() == 'vespertino') {
+                              DateTime aviso3 = DateTime(
+                                dataColeta.year,
+                                dataColeta.month,
+                                dataColeta.day,
+                                12,
+                                0,
+                              );
                               await NotificationService.instance
                                   .scheduleNotification(
                                 id: h.idHorario * 10 + 3,
                                 title: 'Coleta Hoje',
-                                body: 'Coleta vespertina hoje às 12:00',
+                                body:
+                                    'Coleta vespertina hoje às ${_formatHorarioExibicao(h.horario)}',
                                 scheduledDate: aviso3,
                               );
                             }
                           }
                         } else {
-                          // cancela todas as notificações
+                          // Desativa: cancela todas as notificações
                           await NotificationService.instance
                               .cancelAllNotifications();
                         }
@@ -232,7 +299,7 @@ class ConfigScreen extends StatelessWidget {
                             }
                           });
                         } else {
-                          // Desativa localização em tempo real e restaura localização via CEP
+                          // Desativa localização em tempo real e restaura via CEP
                           if (user != null) {
                             final cepService = Cep();
                             final data = await cepService.validaCep(user.cep);
@@ -263,13 +330,13 @@ class ConfigScreen extends StatelessWidget {
                     Align(
                       alignment: Alignment.center,
                       child: Material(
-                        color: Colors.transparent, // sem fundo
+                        color: Colors.transparent,
                         child: InkWell(
                           onTap: () => NavigateScreen.changeScreen(
                             context,
                             AboutTheAppScreen(),
                           ),
-                          child: Padding(
+                          child: const Padding(
                             padding: EdgeInsets.all(10.0),
                             child: Text(
                               'Sobre o APP',
@@ -289,12 +356,17 @@ class ConfigScreen extends StatelessWidget {
             ],
           ),
         ),
-        FloatingNavigationBar(),
+        const FloatingNavigationBar(),
       ],
     );
   }
 
-  changeScreen(BuildContext context, Widget screen) {
-    Navigator.push(context, MaterialPageRoute(builder: (_) => screen));
+  /// Formata a string de exibição do horário: “Diurno” mostra “08:00”,
+  /// e “Noturno” mostra “18:00”. Se vier “HH:mm”, exibe como está.
+  String _formatHorarioExibicao(String horarioOriginal) {
+    final s = horarioOriginal.trim().toLowerCase();
+    if (s == 'diurno') return '08:00';
+    if (s == 'noturno') return '18:00';
+    return horarioOriginal;
   }
 }

@@ -71,8 +71,8 @@ class _MapScreenState extends State<MapScreen> {
           GoogleMap(
             initialCameraPosition: CameraPosition(
               target: LatLng(user.latitude!, user.longitude!),
-              zoom: 16,
-              //zoom: 11, ZOOM ORIGINAL, COMENTEI PARA TESTE
+              //zoom: 16,
+              zoom: 12,
             ),
             markers: _markers,
             zoomControlsEnabled: true,
